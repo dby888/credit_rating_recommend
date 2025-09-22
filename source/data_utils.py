@@ -13,11 +13,11 @@ def initiate_database():
     """
     Initialize the SQLite database.
     This function will create:
-      1. report                  - Metadata table for rating reports (added 'year' column)
-      2. report_sections         - Detailed table for storing section-level content
-      3. event                   - Extracted events (with name, evidence, event_type, period)
-      4. factor                  - Extracted factors (with name, evidence, period)
-      5. variable                - Logical variables (with value/unit/period_text/period)
+      1. report                  - Metadata table for rating reports
+      2. report_sections         - Detailed table for storing section-level contents
+      3. event                   - Extracted events
+      4. factor                  - Extracted factors
+      5. variable                - Logical variables
       6. event_relation          - Relationship table linking event-factor-variable
     """
     db_path = settings.database_path
@@ -64,7 +64,7 @@ def initiate_database():
             id INTEGER PRIMARY KEY,                  -- Global unique ID (Snowflake)
             report_id INTEGER NOT NULL,              -- Foreign key referencing report.id
             section_name TEXT NOT NULL,              -- Standardized section name
-            contents TEXT NOT NULL,                  -- Full text of this section
+            contents TEXT NOT NULL,                   -- Full text of this section
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP, -- Record creation time
             updated_at DATETIME DEFAULT CURRENT_TIMESTAMP  -- Last update time,
             ,FOREIGN KEY(report_id) REFERENCES report(id) ON DELETE CASCADE
@@ -87,9 +87,10 @@ def initiate_database():
             section_id INTEGER,                           -- Keep for precise section mapping (no FK)
             section_name TEXT NOT NULL,                   -- Denormalized for name-based lookups
             name TEXT NOT NULL,                           -- Event name/title
-            evidence TEXT,                                -- Verbatim snippet for auditability
+            contents TEXT NOT NULL,                        -- Event description
             event_type TEXT,                              -- Event type/category
             period TEXT,                                  -- Period (e.g., 'FY2024', 'Q2 2025', 'Mar-2024')
+            evidence TEXT,                                -- Verbatim snippet for auditability
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY(report_id) REFERENCES report(id) ON DELETE CASCADE
@@ -114,8 +115,9 @@ def initiate_database():
             section_id INTEGER,                           -- Keep (no FK)
             section_name TEXT NOT NULL,
             name TEXT NOT NULL,                           -- Factor name
-            evidence TEXT,                                -- Verbatim snippet
+            contents TEXT NOT NULL,                        -- Factor contents
             period TEXT,                                  -- Period text
+            evidence TEXT,                                -- Verbatim snippet
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             updated_at DATETIME DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY(report_id) REFERENCES report(id) ON DELETE CASCADE
@@ -136,6 +138,7 @@ def initiate_database():
             section_id INTEGER,                           -- Keep (no FK)
             section_name TEXT NOT NULL,
             name TEXT NOT NULL,                           -- Variable logical name
+            contents TEXT NOT NULL,                       -- Variable contents
             value TEXT,                                   -- Parsed value (raw text)
             unit TEXT,                                    -- Unit (%, USD bn, etc.)
             period TEXT,                             -- Time period as text (e.g., 'FY2024', 'Q2 2025')
@@ -156,26 +159,14 @@ def initiate_database():
     cur.execute("""
         CREATE TABLE IF NOT EXISTS event_relation (
             id INTEGER PRIMARY KEY,                       -- Global unique ID 
-            event_id INTEGER,                             -- FK -> event.id
+            section_id INTEGER,                           -- FK -> report_sections.id (nullable)
+            event_id INTEGER,                             -- FK -> event.id (nullable)
             factor_id INTEGER,                            -- FK -> factor.id (nullable)
             variable_id INTEGER,                          -- FK -> variable.id (nullable)
+            score FLOAT,
             created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY(event_id) REFERENCES event(id) ON DELETE CASCADE,
-            FOREIGN KEY(factor_id) REFERENCES factor(id) ON DELETE CASCADE,
-            FOREIGN KEY(variable_id) REFERENCES variable(id) ON DELETE CASCADE
+            FOREIGN KEY(section_id) REFERENCES report_sections(id) ON DELETE CASCADE
         );
-    """)
-    cur.execute("""
-        CREATE INDEX IF NOT EXISTS idx_event_relation_event
-        ON event_relation(event_id);
-    """)
-    cur.execute("""
-        CREATE INDEX IF NOT EXISTS idx_event_relation_factor
-        ON event_relation(factor_id);
-    """)
-    cur.execute("""
-        CREATE INDEX IF NOT EXISTS idx_event_relation_variable
-        ON event_relation(variable_id);
     """)
 
 
@@ -474,16 +465,19 @@ def insert_efv_rows(rows):
 
     # Explicitly insert IDs generated by new_id()
     ev_sql = """
-        INSERT INTO event (id, report_id, section_id, section_name, name, evidence, event_type, period)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO event (id, report_id, section_id, section_name,
+                           name, contents, event_type, period, evidence)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
     """
     fa_sql = """
-        INSERT INTO factor (id, report_id, section_id, section_name, name, evidence, period)
-        VALUES (?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO factor (id, report_id, section_id, section_name,
+                            name, contents, period, evidence)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
     """
+
     var_sql = """
-        INSERT INTO variable (id, report_id, section_id, section_name, name, value, unit, period, evidence)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        INSERT INTO variable (id, report_id, section_id, section_name, name, contents, value, unit, period, evidence)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     """
 
     ev_rows, fa_rows, var_rows = [], [], []
@@ -494,36 +488,42 @@ def insert_efv_rows(rows):
         section_id = row.get("section_id")  # may be None
         section_name = row.get("section_name")
 
+        # ------- events -------
         for ev in row.get("events", []):
             ev_rows.append((
-                new_id(),                          # id
+                new_id(),  # id
                 report_id,
                 section_id,
                 _safe(section_name),
                 _safe(ev.get("name")),
-                _safe(ev.get("evidence")),
+                _safe(ev.get("contents")),  # NEW: contents
                 _safe(ev.get("event_type")),
                 _norm_period(ev.get("period")),
+                _safe(ev.get("evidence")),
             ))
 
+        # ------- factors -------
         for fa in row.get("factors", []):
             fa_rows.append((
-                new_id(),                          # id
+                new_id(),  # id
                 report_id,
                 section_id,
                 _safe(section_name),
                 _safe(fa.get("name")),
-                _safe(fa.get("evidence")),
+                _safe(fa.get("contents")),  # NEW: contents
                 _norm_period(fa.get("period")),
+                _safe(fa.get("evidence")),
             ))
 
+        # ------- variables -------
         for va in row.get("variables", []):
             var_rows.append((
-                new_id(),                          # id
+                new_id(),  # id
                 report_id,
                 section_id,
                 _safe(section_name),
                 _safe(va.get("name")),
+                _safe(va.get("contents")),  # NEW: contents
                 _safe(va.get("value")),
                 _safe(va.get("unit")),
                 _norm_period(va.get("period")),
@@ -799,7 +799,70 @@ def fetch_efv_by_reports_and_sections(
     return {"variables": variables, "factors": factors, "events": events}
 
 
-# ---------- One-call helper ----------
+def _in_clause(n: int) -> str:
+    """Return '?, ?, ?' for SQLite IN clause with n placeholders."""
+    return ", ".join(["?"] * n)
+
+def fetch_efv_by_sections(db_path: str = settings.database_path, section_names: Optional[Iterable[str]] = None) -> Dict[str, List[Dict[str, Any]]]:
+    """
+    Fetch EFV (events, factors, variables) from the SQLite database filtered by section_names.
+
+    Args:
+        db_path: Path to the SQLite database file.
+        section_names: List of section names to filter by (case-insensitive).
+                       Pass None to return all sections.
+
+    Returns:
+        {
+          "events":    [dict, ...],
+          "factors":   [dict, ...],
+          "variables": [dict, ...]
+        }
+    """
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+
+    # --- Build WHERE clause if needed ---
+    where_sql = ""
+    params: List[Any] = []
+    if section_names:
+        where_sql = f"WHERE section_name COLLATE NOCASE IN ({_in_clause(len(section_names))})"
+        params.extend(section_names)
+
+    # --- Queries ---
+    q_events = f"""
+        SELECT id, report_id, section_id, section_name, name, contents, event_type, period,
+               evidence
+        FROM event
+        {where_sql}
+        ORDER BY report_id DESC, id DESC
+    """
+
+    q_factors = f"""
+        SELECT id, report_id, section_id, section_name, name, contents, period, evidence
+        FROM factor
+        {where_sql}
+        ORDER BY report_id DESC, id DESC
+    """
+
+    q_variables = f"""
+        SELECT id, report_id, section_id, section_name, name, contents, value, unit, period,
+               evidence
+        FROM variable
+        {where_sql}
+        ORDER BY report_id DESC, id DESC
+    """
+
+    def run(sql: str) -> List[Dict[str, Any]]:
+        cur.execute(sql, params)
+        return [dict(r) for r in cur.fetchall()]
+
+    results = run(q_events), run(q_factors), run(q_variables)
+    conn.close()
+    return results
+
+
 def fetch_efv_for_company_section(
     company_name: str,
     section_names: Optional[Union[str, Iterable[str]]],
@@ -817,5 +880,5 @@ def fetch_efv_for_company_section(
 
 
 if __name__ == '__main__':
-    # initiate_database()
-    print(fetch_efv_for_company_section("Amazon.com, Inc.", "liquidity and debt structure"))
+    initiate_database()
+    # print(fetch_efv_for_company_section("Amazon.com, Inc.", "liquidity and debt structure"))

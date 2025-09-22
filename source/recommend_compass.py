@@ -1,14 +1,6 @@
-# recommend_compass.py
-# Recommend variables, factors, and events for a given (company, section) using your EFV SQLite schema.
-# - Step 1: resolve report_id set for the company (optionally by year window / limit)
-# - Step 2: fetch EFV rows for (report_id IN ...) AND (section_name IN ...)
-# - Step 3: rank & recommend with a simple score (freq + recency + link bonus for events)
-#
-# Usage:
-#   python recommend_compass.py --company "Amazon.com, Inc." --sections Liquidity "Capital Structure" --k 8 --year-min 2024
-#   python recommend_compass.py --company "Amazon.com, Inc." --sections Liquidity --out recs.json
-#
-
+# recommend_compass.py  (canonical-graph score version)
+# Use sentence-level edge weights to accumulate node importance;
+# Support canonical mapping aggregation; Output two views: company-specific and global industry.
 import os
 import json
 import argparse
@@ -17,25 +9,36 @@ from typing import Iterable, List, Dict, Any, Optional, Union, Tuple
 
 import settings
 
-
-
-# ---------------------------------------------------------------------
-# Section normalization (accept single str or iterable)
-# ---------------------------------------------------------------------
+# -----------------------------
+# Helpers
+# -----------------------------
 def _normalize_sections(section_names: Optional[Union[str, Iterable[str]]]) -> List[str]:
+    """Normalize section_names to a clean list of lowercase strings."""
     if section_names is None:
         return []
     if isinstance(section_names, str):
         items = [section_names]
     else:
         items = list(section_names)
-    out = [s.strip() for s in items if s is not None and str(s).strip()]
-    return out
+    return [s.strip() for s in items if s is not None and str(s).strip()]
 
+def _table_exists(conn: sqlite3.Connection, name: str) -> bool:
+    """Check if a given table exists in the SQLite database."""
+    cur = conn.cursor()
+    cur.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name=?;", (name,))
+    return cur.fetchone() is not None
 
-# ---------------------------------------------------------------------
-# Step 1 — resolve report_id set for the company (optional year window / limit)
-# ---------------------------------------------------------------------
+def _in_clause(names: List[str]) -> str:
+    # Generate a placeholder string like '?, ?, ?' for SQL IN clause
+    return ", ".join(["?"] * len(names))
+
+def _topk(items: List[Dict[str, Any]], k: int) -> List[Dict[str, Any]]:
+    """Return Top-K items sorted by score, then frequency."""
+    return sorted(items, key=lambda x: (x.get("score", 0.0), x.get("freq", 0)), reverse=True)[:k]
+
+# -----------------------------
+# Resolve report_ids and section_ids
+# -----------------------------
 def get_report_ids_for_company(
     conn: sqlite3.Connection,
     company_name: str,
@@ -43,10 +46,10 @@ def get_report_ids_for_company(
     year_max: Optional[int] = None,
     limit: Optional[int] = None,
 ) -> List[int]:
+    """Fetch report IDs for a given company with optional year filtering."""
     cur = conn.cursor()
     where = ["LOWER(company_name) = LOWER(:c)"]
     params = {"c": company_name}
-
     if year_min is not None:
         where.append("year >= :ymin"); params["ymin"] = year_min
     if year_max is not None:
@@ -61,190 +64,202 @@ def get_report_ids_for_company(
     """
     if limit is not None:
         params["lim"] = limit
-
     cur.execute(sql, params)
-    return [row[0] for row in cur.fetchall()]
+    return [r[0] for r in cur.fetchall()]
 
-
-# ---------------------------------------------------------------------
-# Step 2 — fetch EFV rows for (report_id IN …) AND (section_name IN …)
-#         NOTE: Uses exact section_name to keep (report_id, section_name) index usable.
-# ---------------------------------------------------------------------
-def _build_in_placeholders(prefix: str, values: List[Any]) -> Tuple[str, Dict[str, Any]]:
-    ph_names = [f":{prefix}{i}" for i in range(len(values))]
-    clause = ", ".join(ph_names)
-    params = {f"{prefix}{i}": v for i, v in enumerate(values)}
-    return clause, params
-
-def fetch_efv_by_reports_and_sections(
+def get_section_ids_for_company_sections(
     conn: sqlite3.Connection,
     report_ids: List[int],
     section_names: List[str],
-) -> Dict[str, List[Dict[str, Any]]]:
+) -> List[int]:
+    """Get section_ids restricted to given report_ids and section_names."""
     if not report_ids or not section_names:
-        return {"variables": [], "factors": [], "events": []}
-
-    rid_clause, rid_params = _build_in_placeholders("rid", report_ids)
-    sec_clause, sec_params = _build_in_placeholders("sn", section_names)
-    params = {**rid_params, **sec_params}
-
-    conn.row_factory = sqlite3.Row
+        return []
     cur = conn.cursor()
-
-    q_var = f"""
-        SELECT id, report_id, section_name, name, value, unit, period, evidence
-        FROM variable
-        WHERE report_id IN ({rid_clause})
-          AND section_name IN ({sec_clause})
-        ORDER BY report_id DESC, id DESC
-    """
-    q_fac = f"""
-        SELECT id, report_id, section_name, name, period, evidence
-        FROM factor
-        WHERE report_id IN ({rid_clause})
-          AND section_name IN ({sec_clause})
-        ORDER BY report_id DESC, id DESC
-    """
-    q_evt = f"""
-        SELECT id, report_id, section_name, name, event_type, period, evidence
-        FROM event
-        WHERE report_id IN ({rid_clause})
-          AND section_name IN ({sec_clause})
-        ORDER BY report_id DESC, id DESC
-    """
-
-    cur.execute(q_var, params); variables = [dict(r) for r in cur.fetchall()]
-    cur.execute(q_fac, params); factors   = [dict(r) for r in cur.fetchall()]
-    cur.execute(q_evt, params); events    = [dict(r) for r in cur.fetchall()]
-
-    return {"variables": variables, "factors": factors, "events": events}
-
-
-# ---------------------------------------------------------------------
-# Event link bonus — how many variables/factors linked via event_relation
-# ---------------------------------------------------------------------
-def fetch_event_links(conn: sqlite3.Connection, event_ids: List[int]) -> Dict[int, Dict[str, int]]:
-    if not event_ids:
-        return {}
-    clause, params = _build_in_placeholders("eid", event_ids)
+    sec_place = _in_clause(section_names)
+    rep_place = _in_clause(report_ids)
     sql = f"""
-        SELECT event_id,
-               SUM(CASE WHEN factor_id   IS NOT NULL THEN 1 ELSE 0 END) AS factor_links,
-               SUM(CASE WHEN variable_id IS NOT NULL THEN 1 ELSE 0 END) AS variable_links
-        FROM event_relation
-        WHERE event_id IN ({clause})
-        GROUP BY event_id
+        SELECT id
+        FROM report_sections
+        WHERE report_id IN ({rep_place})
+          AND LOWER(section_name) IN ({sec_place})
     """
-    conn.row_factory = sqlite3.Row
-    cur = conn.cursor()
+    params = [*report_ids, *[s.lower() for s in section_names]]
     cur.execute(sql, params)
-    out = {}
-    for r in cur.fetchall():
-        out[int(r["event_id"])] = {
-            "factor_links": int(r["factor_links"] or 0),
-            "variable_links": int(r["variable_links"] or 0),
-        }
-    return out
+    return [r[0] for r in cur.fetchall()]
 
-
-# ---------------------------------------------------------------------
-# Step 3 — rank & recommend
-#   Simple scoring:
-#     variables/factors: score = freq + 0.1 * recency_rank
-#     events:            score = freq + 0.1 * recency_rank + link_bonus
-#   recency_rank is 1..N (newer is larger) based on max(rowid) as proxy.
-# ---------------------------------------------------------------------
-def _rank_items(rows: List[Dict[str, Any]], key_fields: List[str], k: int) -> List[Dict[str, Any]]:
+def get_section_ids_global_by_names(conn: sqlite3.Connection, section_names: List[str]) -> List[int]:
+    """Global scope: fetch all matching section_ids only by section_name, not limited to a single company."""
+    if not section_names:
+        return []
+    cur = conn.cursor()
+    sec_place = _in_clause(section_names)
+    sql = f"""
+        SELECT id
+        FROM report_sections
+        WHERE LOWER(section_name) IN ({sec_place})
     """
-    Aggregate by key_fields (case-insensitive for name). Compute freq and recency proxy.
-    Returns top-k with {"name", "...", "freq", "score"}.
+    params = [s.lower() for s in section_names]
+    cur.execute(sql, params)
+    return [r[0] for r in cur.fetchall()]
+
+# -----------------------------
+# Canonical aggregation per type
+# -----------------------------
+def _canonical_query_parts(node_type: str) -> Dict[str, str]:
     """
-    from collections import defaultdict
+    Return table and column names for the given node type.
+    node_type ∈ {'event','factor','variable'}
+    """
+    return {
+        "node_table": node_type,                       # event / factor / variable
+        "id_col": "id",
+        "name_col": "name",
+        "map_table": f"{node_type}_to_canonical_map",  # may not exist
+        "map_node_id_col": f"{node_type}_id",
+        "canon_table": f"canonical_{node_type}",
+        "canon_id_col": "id",
+        "canon_name_col": "canonical_name",
+        "er_col": f"{node_type}_id",                  # column name in event_relation
+    }
 
-    # recency proxy: use max(report_id) or max(id) if available
-    def recency_val(r: Dict[str, Any]) -> int:
-        return int(r.get("report_id") or r.get("id") or 0)
-
-    bucket = defaultdict(lambda: {"freq": 0, "max_recency": 0, "examples": []})
-
-    for r in rows:
-        key = []
-        for f in key_fields:
-            val = r.get(f)
-            key.append(val.lower().strip() if isinstance(val, str) else val)
-        key = tuple(key)
-
-        b = bucket[key]
-        b["freq"] += 1
-        rv = recency_val(r)
-        if rv > b["max_recency"]:
-            b["max_recency"] = rv
-        if len(b["examples"]) < 3:
-            b["examples"].append(r)
-
-    # rank by recency then freq
-    ranked = sorted(bucket.items(), key=lambda kv: (kv[1]["max_recency"], kv[1]["freq"]), reverse=True)
-
-    # build output with representative fields
-    out = []
-    for key, agg in ranked[:k]:
-        exemplar = agg["examples"][0]
-        item = {f: exemplar.get(f) for f in key_fields if f in exemplar}
-        # include display name if available
-        if "name" in exemplar:
-            item["name"] = exemplar["name"]
-        item["freq"] = agg["freq"]
-        item["score"] = agg["freq"] + 0.1  # tiny base; recency already in ordering
-        item["examples"] = agg["examples"]
-        out.append(item)
-    return out
-
-
-def rank_recommendations(
+def _fetch_canonical_scores_for_scope(
     conn: sqlite3.Connection,
-    raw: Dict[str, List[Dict[str, Any]]],
-    k: int = 10
-) -> Dict[str, List[Dict[str, Any]]]:
-    # Variables: group by name
-    vars_ranked = _rank_items(raw["variables"], key_fields=["name"], k=k)
+    section_ids: List[int],
+    node_type: str,
+) -> List[Dict[str, Any]]:
+    """
+    Within the given section_ids:
+      1) Aggregate edge weights (importance) by raw node_id in event_relation.
+      2) Left join to canonical mapping to map to canonical_id (fallback to raw if no mapping exists).
+      3) Aggregate again by canonical_id/name at Python side.
+    Return list: [{canonical_id, name, score, freq}]
+    """
+    if not section_ids:
+        return []
 
-    # Factors: group by name
-    facts_ranked = _rank_items(raw["factors"], key_fields=["name"], k=k)
+    p = _canonical_query_parts(node_type)
+    node_table = p["node_table"]
+    id_col = p["id_col"]
+    name_col = p["name_col"]
+    er_col = p["er_col"]
+    map_table = p["map_table"]
+    map_node_id_col = p["map_node_id_col"]
+    canon_table = p["canon_table"]
+    canon_id_col = p["canon_id_col"]
+    canon_name_col = p["canon_name_col"]
 
-    # Events: group by (name, event_type); add link bonus
-    ev_rows = raw["events"]
-    ev_ranked = _rank_items(ev_rows, key_fields=["name", "event_type"], k=k)
+    has_map = _table_exists(conn, map_table) and _table_exists(conn, canon_table)
 
-    # link bonus
-    ev_ids = [r["id"] for r in ev_rows if "id" in r]
-    link_map = fetch_event_links(conn, ev_ids)
-    for e in ev_ranked:
-        # find a representative event_id from examples
-        examples = e.get("examples", [])
-        any_id = next((ex.get("id") for ex in examples if ex.get("id") is not None), None)
-        links = link_map.get(any_id or -1, {"factor_links": 0, "variable_links": 0})
-        link_bonus = 0.5 * int(links["factor_links"] > 0) + 0.5 * int(links["variable_links"] > 0)
-        e["link_bonus"] = link_bonus
-        e["score"] = e.get("score", 0) + link_bonus
+    # Step 1: Aggregate edge weights by raw node_id from event_relation
+    # Note: Only count rows where er.<type>_id is NOT NULL
+    cur = conn.cursor()
+    sec_place = _in_clause(section_ids)
+    sql_base = f"""
+        SELECT n.{id_col} AS raw_id,
+               n.{name_col} AS raw_name,
+               SUM(er.score) AS raw_score
+        FROM event_relation er
+        JOIN {node_table} n ON er.{er_col} = n.{id_col}
+        WHERE er.section_id IN ({sec_place})
+        GROUP BY n.{id_col}, n.{name_col}
+    """
+    cur.execute(sql_base, section_ids)
+    rows = cur.fetchall()
 
-    # final sort by score then freq
-    ev_ranked.sort(key=lambda x: (x["score"], x["freq"]), reverse=True)
-    vars_ranked.sort(key=lambda x: (x["score"], x["freq"]), reverse=True)
-    facts_ranked.sort(key=lambda x: (x["score"], x["freq"]), reverse=True)
+    # Step 2: Map to canonical (if mapping tables exist)
+    results: Dict[str, Dict[str, Any]] = {}  # key -> {canonical_id,name,score,freq}
+    if has_map:
+        # Fetch mapping for all raw_ids
+        raw_ids = [r[0] for r in rows]
+        if not raw_ids:
+            return []
+        raw_place = _in_clause(raw_ids)
+        # raw_id -> (canon_id, canon_name)
+        sql_map = f"""
+            SELECT m.{map_node_id_col} AS raw_id,
+                   c.{canon_id_col}     AS canon_id,
+                   c.{canon_name_col}   AS canon_name
+            FROM {map_table} m
+            JOIN {canon_table} c ON m.canonical_id = c.{canon_id_col}
+            WHERE m.{map_node_id_col} IN ({raw_place})
+        """
+        cur.execute(sql_map, raw_ids)
+        mapping = {rid: (cid, cname) for (rid, cid, cname) in cur.fetchall()}
 
-    # strip heavy example payload if you want lean output (keep top-1 example)
-    for col in (vars_ranked, facts_ranked, ev_ranked):
-        for item in col:
-            ex = item.get("examples") or []
-            item["example"] = ex[0] if ex else None
-            item.pop("examples", None)
+        # Aggregate into canonical-level groups
+        for raw_id, raw_name, raw_score in rows:
+            canon = mapping.get(raw_id)
+            if canon:
+                key = f"canon:{canon[0]}"
+                name = canon[1]
+                cid = canon[0]
+            else:
+                key = f"raw:{raw_id}"
+                name = raw_name
+                cid = None  # None indicates no canonical mapping
+            slot = results.setdefault(key, {"canonical_id": cid, "name": name, "score": 0.0, "freq": 0})
+            slot["score"] += float(raw_score or 0.0)
+            slot["freq"]  += 1
+    else:
+        # If no mapping table, treat raw nodes as pseudo-canonical
+        for raw_id, raw_name, raw_score in rows:
+            key = f"raw:{raw_id}"
+            slot = results.setdefault(key, {"canonical_id": None, "name": raw_name, "score": 0.0, "freq": 0})
+            slot["score"] += float(raw_score or 0.0)
+            slot["freq"]  += 1
 
-    return {"variables": vars_ranked, "factors": facts_ranked, "events": ev_ranked}
+    # Convert dict to list
+    out = []
+    for _, v in results.items():
+        out.append(v)
+    return out
 
+# -----------------------------
+# Ranking: company scope & global scope
+# -----------------------------
+def rank_recommendations_graph(
+    conn: sqlite3.Connection,
+    company_name: str,
+    section_names: List[str],
+    year_min: Optional[int],
+    year_max: Optional[int],
+    report_limit: Optional[int],
+    k: int,
+) -> Dict[str, Any]:
+    """
+    Based on sentence-level relationship edge weights (event_relation.score):
+      - Compute canonical aggregated Top-K for company + sections (company-specific view).
+      - Compute canonical aggregated Top-K for same-named sections across all companies (global industry view).
+    """
+    # Company-specific: restrict first by report_ids, then find section_ids
+    report_ids = get_report_ids_for_company(conn, company_name, year_min, year_max, report_limit)
+    comp_section_ids = get_section_ids_for_company_sections(conn, report_ids, section_names)
 
-# ---------------------------------------------------------------------
-# High-level API
-# ---------------------------------------------------------------------
+    # Global industry: only use section_name to get all section_ids
+    global_section_ids = get_section_ids_global_by_names(conn, section_names)
+
+    def pack_view(section_ids: List[int]) -> Dict[str, List[Dict[str, Any]]]:
+        ev = _fetch_canonical_scores_for_scope(conn, section_ids, "event")
+        fa = _fetch_canonical_scores_for_scope(conn, section_ids, "factor")
+        va = _fetch_canonical_scores_for_scope(conn, section_ids, "variable")
+        return {
+            "events":    _topk(ev, k),
+            "factors":   _topk(fa, k),
+            "variables": _topk(va, k),
+        }
+
+    company_view = pack_view(comp_section_ids)
+    global_view  = pack_view(global_section_ids)
+
+    return {
+        "company_view": company_view,   # Top-K for this company only
+        "global_view":  global_view,    # Cross-company Top-K for same section_name
+    }
+
+# -----------------------------
+# High-level API (keep original entry & return both views)
+# -----------------------------
 def recommend_for_company_sections(
     company_name: str,
     section_names: Optional[Union[str, Iterable[str]]],
@@ -254,17 +269,23 @@ def recommend_for_company_sections(
     k: int = 10,
 ) -> Dict[str, Any]:
     """
-    1) Resolve report IDs for company (optional year window / limit),
-    2) Fetch EFV rows once per table,
-    3) Rank and return recommendations.
+    New logic:
+      - Replace old "frequency + recency" method with graph edge weight accumulation (with canonical aggregation).
+      - Return both company_view and global_view Top-K results.
     """
     db_path = settings.database_path
+    sects = _normalize_sections(section_names)
     conn = sqlite3.connect(db_path)
     try:
-        report_ids = get_report_ids_for_company(conn, company_name, year_min, year_max, report_limit)
-        sects = _normalize_sections(section_names)
-        raw = fetch_efv_by_reports_and_sections(conn, report_ids, sects)
-        ranked = rank_recommendations(conn, raw, k=k)
+        views = rank_recommendations_graph(
+            conn=conn,
+            company_name=company_name,
+            section_names=sects,
+            year_min=year_min,
+            year_max=year_max,
+            report_limit=report_limit,
+            k=k,
+        )
         return {
             "query": {
                 "company": company_name,
@@ -274,15 +295,14 @@ def recommend_for_company_sections(
                 "report_limit": report_limit,
                 "top_k": k,
             },
-            "recommendations": ranked
+            "recommendations": views  # {"company_view":{...}, "global_view":{...}}
         }
     finally:
         conn.close()
 
-
-# ---------------------------------------------------------------------
-# CLI
-# ---------------------------------------------------------------------
+# -----------------------------
+# CLI (keep unchanged)
+# -----------------------------
 def _parse_args():
     p = argparse.ArgumentParser(description="Recommend EFV items for a given company and section(s).")
     p.add_argument("--company", required=True, help="Company name (matches report.company_name, case-insensitive).")
@@ -293,7 +313,6 @@ def _parse_args():
     p.add_argument("--report-limit", type=int, default=None, help="Max number of reports (most recent first).")
     p.add_argument("--out", default=None, help="Optional JSON output path.")
     return p.parse_args()
-
 
 def main():
     args = _parse_args()
@@ -311,13 +330,10 @@ def main():
     else:
         print(json.dumps(res, ensure_ascii=False, indent=2))
 
-
 if __name__ == "__main__":
     res = recommend_for_company_sections(
         company_name="Amazon.com, Inc.",
-        section_names=[
-            "liquidity and debt structure",
-        ],
+        section_names=["liquidity and debt structure"],
         k=12,
     )
-    print(res)
+    print(json.dumps(res, ensure_ascii=False, indent=2))

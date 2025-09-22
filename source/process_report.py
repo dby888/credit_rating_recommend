@@ -8,7 +8,7 @@ import data_utils
 import settings
 import parse_html
 from source.call_llm import EventFactorVariableExtractor
-
+from datetime import datetime
 
 def is_section_include_event(name):
     if str_utils.normalize_for_match(name) in settings.EXCLUDE_SECTIONS:
@@ -74,12 +74,10 @@ def extract_event(section_names=None):
     extractor = EventFactorVariableExtractor(
         model="gpt-4.1-2025-04-14",  # set your model
         api_key=settings.GPT_KEY,  # or set OPENAI_API_KEY env var
-        temperature=0.0,
-        response_format_via_schema=True,
-        max_chars=8000,
-        rate_limit_per_sec=None  # set e.g., 2.0 to throttle if needed
+        temperature=0.0
     )
     row_list_need = []
+    STOP = 0
     for row in rows:
         section_id, report_id, company_name, section_name, contents = row
 
@@ -87,18 +85,20 @@ def extract_event(section_names=None):
         if not is_section_include_event(section_name):
             continue
         row_list_need.append(row)
-        break
 
-    # batch_rows = extractor.extract_batch_rows(row_list_need)
-    # print("\n=== BATCH (ROWS WITH METADATA) RESULT ===")
-    # print(json.dumps(batch_rows, ensure_ascii=False, indent=2))
-    # out_path = "efv_batch_rows.json"
-    # with open(out_path, "w", encoding="utf-8") as f:
-    #     json.dump(batch_rows, f, ensure_ascii=False, indent=2)
 
-    # print("Saved to:", out_path)
-    with open("efv_batch_rows.json", "r", encoding="utf-8") as f:
-        batch_rows = json.load(f)
+    batch_rows = extractor.extract_batch_rows(row_list_need)
+    print("\n=== BATCH (ROWS WITH METADATA) RESULT ===")
+    out_path = f"efv_batch_rows{section_name}.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(batch_rows, f, ensure_ascii=False, indent=2)
+
+    print("Saved to:", out_path)
+    try:
+        with open(f"efv_batch_rows{section_name}.json", "r", encoding="utf-8") as f:
+            batch_rows = json.load(f)
+    except:
+        return
     data_utils.delete_efv_by_section_names(section_names)
     stats = data_utils.insert_efv_rows(batch_rows)
     print(stats)
@@ -109,3 +109,4 @@ if __name__ == '__main__':
     # get_html_data
     # process_raw_data(settings.Fitch_report_file_path, "Fitch")
     extract_event(["liquidity and debt structure"])
+    # extract_event(["Issuer Profile"])
