@@ -200,24 +200,24 @@ def save_links_to_db(section_id_to_text, grouped, db_path=settings.database_path
                 "score": item["score"],
             })
 
-    df = pd.DataFrame(all_rows, columns=["section_id", "event_id", "factor_id", "variable_id", "score"])
-    print("生成的关系 DataFrame：")
-    print(df)
-
+        # --- Direct insert into SQLite ---
     conn = sqlite3.connect(db_path)
     cur = conn.cursor()
 
-    # delete old rows by section
-    for sid in df["section_id"].unique():
+    # 1. Delete old rows for all sections being processed
+    for sid in section_id_to_text.keys():
         cur.execute("DELETE FROM event_relation WHERE section_id = ?", (sid,))
-        print(f"Deleted old rows for section_id = {sid}")
 
-    # insert new rows
-    df.to_sql("event_relation", conn, if_exists="append", index=False)
+    # 2. Insert new rows
+    insert_sql = """
+                INSERT INTO event_relation (section_id, event_id, factor_id, variable_id, score)
+                VALUES (:section_id, :event_id, :factor_id, :variable_id, :score)
+            """
+    cur.executemany(insert_sql, all_rows)
+    print(f"Inserted rows: {len(all_rows)}")
     conn.commit()
     conn.close()
-    print("新数据已插入 event_relation 表")
-    return df
+    return len(all_rows)
 
 
 def calculate_relation(section_names):
@@ -237,6 +237,7 @@ def calculate_relation(section_names):
 
 # ---- main ----
 if __name__ == '__main__':
+    # section_names = ["liquidity and debt structure"]
     section_names = None
     result = calculate_relation(section_names)
     print(result)

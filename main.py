@@ -1,77 +1,93 @@
 import argparse
-from exp.linear_regression import LinearRegressionExp
-from exp.xgboost_regression import XGBoostExp
-from exp.arima import ARIMAExp
+import json
+from source.recommend_compass import recommend
+import source.settings as settings
 
+# -----------------------------
+# CLI Parser
+# -----------------------------
+def _parse_args():
+    """
+    Parse command-line arguments for the recommendation engine.
+    """
+    p = argparse.ArgumentParser(
+        description="Recommend events, factors, and variables for a given company and report section(s)."
+    )
+
+    # Required identifiers
+    p.add_argument("--company", required=True,
+                   help="Company name (matches report.company_name, case-insensitive).")
+    p.add_argument("--sections", nargs="+", required=True,
+                   help="One or more section names (exact match recommended).")
+
+    # Top-K controls
+    p.add_argument("--k", type=int, default=None,
+                   help="Convenience: set the same Top-K for variables, factors, and events.")
+    p.add_argument("--k-var", type=int, default=None,
+                   help="Top-K for variables. Overrides --k when provided.")
+    p.add_argument("--k-factor", type=int, default=None,
+                   help="Top-K for factors. Overrides --k when provided.")
+    p.add_argument("--k-event", type=int, default=None,
+                   help="Top-K for events. Overrides --k when provided.")
+
+    # Time/window constraints
+    p.add_argument("--year-min", type=int, default=None, help="Minimum year (inclusive).")
+    p.add_argument("--year-max", type=int, default=None, help="Maximum year (inclusive).")
+    p.add_argument("--report-limit", type=int, default=None,
+                   help="Max number of reports (most recent first).")
+
+    # Output
+    p.add_argument("--out", default=None, help="Optional JSON output path.")
+
+    # Hybrid weights (keep defaults aligned with settings)
+    p.add_argument("--w-comp", type=float, default=settings.weight_company,
+                   help=f"Hybrid weight for company rank (default: {settings.weight_company}).")
+    p.add_argument("--w-glob", type=float, default=settings.weight_global,
+                   help=f"Hybrid weight for global rank (default: {settings.weight_global}).")
+    p.add_argument("--w-freq", type=float, default=settings.weight_frequency,
+                   help=f"Hybrid weight for normalized frequency (default: {settings.weight_frequency}).")
+    p.add_argument("--both-bonus", type=float, default=settings.both_bonus,
+                   help=f"Bonus if appears in both company & global (default: {settings.both_bonus}).")
+
+    return p.parse_args()
+
+# -----------------------------
+# Main
+# -----------------------------
 def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--model', type=str, required=True,
-                        help='Model to run: linear_regression | xgboost | arima')
-    parser.add_argument('--task', type=str, required=True,
-                        help='Task to perform: nowcasting | auto-regression | hyperparams_search')
-    parser.add_argument('--data_path', type=str, required=True, help='Path to the dataset pickle file')
-    parser.add_argument('--save_format', type=str, default='json', choices=['json', 'csv', 'all'],
-                        help='Format to save prediction and metric results')
-    parser.add_argument('--results_path', type=str, default='./results', help='Root directory to save results')
-    parser.add_argument('--checkpoints_path', type=str, default='./checkpoints', help='Where to save model checkpoints')
-    parser.add_argument('--search', action='store_true', help='Whether to use saved hyperparameters (if available)')
-    parser.add_argument('--eval_metric', type=str, default='rmse',
-                        help='Metric used to select best hyperparams: rmse, mse, mae')
+    """
+    Main entry point: parse CLI args, call recommend(), and handle output.
+    """
+    args = _parse_args()
 
-    args = parser.parse_args()
+    # Resolve Top-K values with precedence: specific flag > --k > function default
+    k_all = args.k
+    k_var = args.k_var if args.k_var is not None else (k_all if k_all is not None else 8)
+    k_factor = args.k_factor if args.k_factor is not None else (k_all if k_all is not None else 6)
+    k_event = args.k_event if args.k_event is not None else (k_all if k_all is not None else 6)
 
-    if args.model == 'linear_regression':
-        exp = LinearRegressionExp(
-            data_path=args.data_path,
-            model_name=args.model,
-            results_path=args.results_path,
-            checkpoints_path=args.checkpoints_path,
-            save_format=args.save_format
-        )
-        exp.train()
-        exp.test(task=args.task)
+    results = recommend(
+        company_name=args.company,
+        section_names=args.sections,
+        k_var=k_var,
+        k_factor=k_factor,
+        k_event=k_event,
+        year_min=args.year_min,
+        year_max=args.year_max,
+        report_limit=args.report_limit,
+        w_comp=args.w_comp,
+        w_glob=args.w_glob,
+        w_freq=args.w_freq,
+        both_bonus=args.both_bonus,
+    )
 
-    elif args.model == 'xgboost':
-        exp = XGBoostExp(
-            data_path=args.data_path,
-            model_name=args.model,
-            results_path=args.results_path,
-            checkpoints_path=args.checkpoints_path,
-            save_format=args.save_format,
-            eval_metric=args.eval_metric
-        )
-
-        if args.task == 'hyperparams_search':
-            exp.load_data()
-            param_grid = {
-                'n_estimators': [25, 50, 100],
-                'max_depth': [3, 5, 7],
-                'learning_rate': [1e-4, 1e-3, 1e-2],
-            }
-            exp.hyperparams_search(param_grid)
-            return
-
-        exp.load_data()
-        exp.train()
-        exp.test(task=args.task)
-
-    elif args.model == 'arima':
-        exp = ARIMAExp(
-            data_path=args.data_path,
-            model_name=args.model,
-            results_path=args.results_path,
-            checkpoints_path=args.checkpoints_path,
-            save_format=args.save_format
-        )
-
-        if args.task == 'hyperparams_search':
-            raise NotImplementedError("ARIMA does not support hyperparameter search.")
-
-        exp.load_data()
-        exp.test(task=args.task)
-
+    if args.out:
+        with open(args.out, "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=2)
+        print(f"Results saved to {args.out}")
     else:
-        raise NotImplementedError(f"Model '{args.model}' not supported.")
+        print(json.dumps(results, ensure_ascii=False, indent=2))
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

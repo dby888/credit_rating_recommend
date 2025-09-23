@@ -1,0 +1,2548 @@
+[
+  {
+    "section_id": 756994756722167810,
+    "report_id": 756994756717973504,
+    "company_name": "Amazon.com, Inc.",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Walmart maintained stable leverage",
+        "contents": "Maintained stable leverage around 2x",
+        "event_type": "Financing",
+        "period": "over time",
+        "evidence_start": "Walmart's ratings reflect its dominant",
+        "evidence_offset": 255,
+        "evidence": "Walmart's ratings reflect its dominant global retail market share position, with nearly $681 billion of 2024 revenue, positive comparable store sales trend, substantial cash flow and consistent financial strategy, which has resulted in stable leverage of around 2x over time.\n\n"
+      },
+      {
+        "name": "Amazon surpassed Walmart EBITDA",
+        "contents": "Amazon 2018 EBITDA surpassed Walmart",
+        "event_type": "Profit/loss",
+        "period": "2018",
+        "evidence_start": "While Amazon's 2018 EBITDA of",
+        "evidence_offset": 234,
+        "evidence": "While Amazon's 2018 EBITDA of $33 billion surpassed Walmart's of $32 billion for the first time, Walmart has greater share in its key market (U.S. retail) and a demonstrated commitment to maintaining leverage at around 2.0x to support its ratings.\n\n"
+      }
+    ],
+    "factors": [
+      {
+        "name": "Walmart dominant market share",
+        "contents": "Dominant global retail market share position",
+        "period": null,
+        "evidence_start": "Walmart's ratings reflect its dominant",
+        "evidence_offset": 255,
+        "evidence": "Walmart's ratings reflect its dominant global retail market share position, with nearly $681 billion of 2024 revenue, positive comparable store sales trend, substantial cash flow and consistent financial strategy, which has resulted in stable leverage of around 2x over time.\n\n"
+      },
+      {
+        "name": "Walmart positive sales trend",
+        "contents": "Positive comparable store sales trend",
+        "period": null,
+        "evidence_start": "Walmart's ratings reflect its dominant",
+        "evidence_offset": 255,
+        "evidence": "Walmart's ratings reflect its dominant global retail market share position, with nearly $681 billion of 2024 revenue, positive comparable store sales trend, substantial cash flow and consistent financial strategy, which has resulted in stable leverage of around 2x over time.\n\n"
+      },
+      {
+        "name": "Walmart substantial cash flow",
+        "contents": "Substantial cash flow",
+        "period": null,
+        "evidence_start": "Walmart's ratings reflect its dominant",
+        "evidence_offset": 255,
+        "evidence": "Walmart's ratings reflect its dominant global retail market share position, with nearly $681 billion of 2024 revenue, positive comparable store sales trend, substantial cash flow and consistent financial strategy, which has resulted in stable leverage of around 2x over time.\n\n"
+      },
+      {
+        "name": "Walmart consistent financial strategy",
+        "contents": "Consistent financial strategy",
+        "period": null,
+        "evidence_start": "Walmart's ratings reflect its dominant",
+        "evidence_offset": 255,
+        "evidence": "Walmart's ratings reflect its dominant global retail market share position, with nearly $681 billion of 2024 revenue, positive comparable store sales trend, substantial cash flow and consistent financial strategy, which has resulted in stable leverage of around 2x over time.\n\n"
+      },
+      {
+        "name": "Walmart leverage commitment",
+        "contents": "Commitment to maintaining leverage at 2.0x",
+        "period": null,
+        "evidence_start": "While Amazon's 2018 EBITDA of",
+        "evidence_offset": 234,
+        "evidence": "While Amazon's 2018 EBITDA of $33 billion surpassed Walmart's of $32 billion for the first time, Walmart has greater share in its key market (U.S. retail) and a demonstrated commitment to maintaining leverage at around 2.0x to support its ratings.\n\n"
+      },
+      {
+        "name": "Target smaller scale",
+        "contents": "Smaller scale compared to Amazon",
+        "period": null,
+        "evidence_start": "Target's ratings relative to Amazon",
+        "evidence_offset": 246,
+        "evidence": "Target's ratings relative to Amazon consider its smaller scale at just over $107 billion in revenue, exposure to disrupted and more cyclical categories like apparel and home, higher margins and historically similar leverage profile.\n\nFor AWS, Fitch compares against cloud service industry peers, including Oracle Corporation (BBB/Stable). "
+      },
+      {
+        "name": "Target cyclical category exposure",
+        "contents": "Exposure to disrupted and cyclical categories",
+        "period": null,
+        "evidence_start": "Target's ratings relative to Amazon",
+        "evidence_offset": 246,
+        "evidence": "Target's ratings relative to Amazon consider its smaller scale at just over $107 billion in revenue, exposure to disrupted and more cyclical categories like apparel and home, higher margins and historically similar leverage profile.\n\nFor AWS, Fitch compares against cloud service industry peers, including Oracle Corporation (BBB/Stable). "
+      },
+      {
+        "name": "Target higher margins",
+        "contents": "Higher margins than Amazon",
+        "period": null,
+        "evidence_start": "Target's ratings relative to Amazon",
+        "evidence_offset": 246,
+        "evidence": "Target's ratings relative to Amazon consider its smaller scale at just over $107 billion in revenue, exposure to disrupted and more cyclical categories like apparel and home, higher margins and historically similar leverage profile.\n\nFor AWS, Fitch compares against cloud service industry peers, including Oracle Corporation (BBB/Stable). "
+      },
+      {
+        "name": "Target similar leverage profile",
+        "contents": "Historically similar leverage profile",
+        "period": null,
+        "evidence_start": "Target's ratings relative to Amazon",
+        "evidence_offset": 246,
+        "evidence": "Target's ratings relative to Amazon consider its smaller scale at just over $107 billion in revenue, exposure to disrupted and more cyclical categories like apparel and home, higher margins and historically similar leverage profile.\n\nFor AWS, Fitch compares against cloud service industry peers, including Oracle Corporation (BBB/Stable). "
+      },
+      {
+        "name": "AWS larger global scale",
+        "contents": "Much larger global scale in cloud services",
+        "period": null,
+        "evidence_start": "For AWS, Fitch compares against",
+        "evidence_offset": 314,
+        "evidence": "For AWS, Fitch compares against cloud service industry peers, including Oracle Corporation (BBB/Stable). From an Infrastructure-as-a- Service perspective, AWS has a much larger scale (over 30% share globally). However, Oracle has significant legacy enterprise products that support continuing investments in cloud services and provide customer access. "
+      },
+      {
+        "name": "Oracle legacy enterprise products",
+        "contents": "Significant legacy enterprise products support investments",
+        "period": null,
+        "evidence_start": "However, Oracle has significant legacy",
+        "evidence_offset": 234,
+        "evidence": "However, Oracle has significant legacy enterprise products that support continuing investments in cloud services and provide customer access. Oracle' s ratings, with over $50 billion in annual revenues and reflects its solid position in the Enterprise Resource Planning segment that provides substantial cash generation, with EBITDA leverage expected to sustain near 3."
+      },
+      {
+        "name": "Oracle solid ERP position",
+        "contents": "Solid position in Enterprise Resource Planning segment",
+        "period": null,
+        "evidence_start": "Oracle' s ratings, with over",
+        "evidence_offset": 246,
+        "evidence": "Oracle' s ratings, with over $50 billion in annual revenues and reflects its solid position in the Enterprise Resource Planning segment that provides substantial cash generation, with EBITDA leverage expected to sustain near 3.5x in the near term."
+      },
+      {
+        "name": "Oracle substantial cash generation",
+        "contents": "Substantial cash generation from ERP segment",
+        "period": null,
+        "evidence_start": "Oracle' s ratings, with over",
+        "evidence_offset": 246,
+        "evidence": "Oracle' s ratings, with over $50 billion in annual revenues and reflects its solid position in the Enterprise Resource Planning segment that provides substantial cash generation, with EBITDA leverage expected to sustain near 3.5x in the near term."
+      },
+      {
+        "name": "Oracle leverage expectation",
+        "contents": "EBITDA leverage expected to sustain near 3.5x",
+        "period": "in the near term",
+        "evidence_start": "Oracle' s ratings, with over",
+        "evidence_offset": 246,
+        "evidence": "Oracle' s ratings, with over $50 billion in annual revenues and reflects its solid position in the Enterprise Resource Planning segment that provides substantial cash generation, with EBITDA leverage expected to sustain near 3.5x in the near term."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Walmart 2024 revenue",
+        "contents": "nearly $681 billion of 2024 revenue",
+        "value": "$681 billion",
+        "unit": "$",
+        "period": "2024",
+        "evidence_start": "Walmart's ratings reflect its dominant",
+        "evidence_offset": 255,
+        "evidence": "Walmart's ratings reflect its dominant global retail market share position, with nearly $681 billion of 2024 revenue, positive comparable store sales trend, substantial cash flow and consistent financial strategy, which has resulted in stable leverage of around 2x over time.\n\n"
+      },
+      {
+        "name": "Walmart leverage",
+        "contents": "stable leverage of around 2x over time",
+        "value": "2x",
+        "unit": "x",
+        "period": "over time",
+        "evidence_start": "Walmart's ratings reflect its dominant",
+        "evidence_offset": 255,
+        "evidence": "Walmart's ratings reflect its dominant global retail market share position, with nearly $681 billion of 2024 revenue, positive comparable store sales trend, substantial cash flow and consistent financial strategy, which has resulted in stable leverage of around 2x over time.\n\n"
+      },
+      {
+        "name": "Amazon 2018 EBITDA",
+        "contents": "Amazon's 2018 EBITDA of $33 billion",
+        "value": "$33 billion",
+        "unit": "$",
+        "period": "2018",
+        "evidence_start": "While Amazon's 2018 EBITDA of",
+        "evidence_offset": 234,
+        "evidence": "While Amazon's 2018 EBITDA of $33 billion surpassed Walmart's of $32 billion for the first time, Walmart has greater share in its key market (U.S. retail) and a demonstrated commitment to maintaining leverage at around 2.0x to support its ratings.\n\n"
+      },
+      {
+        "name": "Walmart 2018 EBITDA",
+        "contents": "Walmart's of $32 billion",
+        "value": "$32 billion",
+        "unit": "$",
+        "period": "2018",
+        "evidence_start": "While Amazon's 2018 EBITDA of",
+        "evidence_offset": 234,
+        "evidence": "While Amazon's 2018 EBITDA of $33 billion surpassed Walmart's of $32 billion for the first time, Walmart has greater share in its key market (U.S. retail) and a demonstrated commitment to maintaining leverage at around 2.0x to support its ratings.\n\n"
+      },
+      {
+        "name": "Target revenue",
+        "contents": "just over $107 billion in revenue",
+        "value": "$107 billion",
+        "unit": "$",
+        "period": null,
+        "evidence_start": "Target's ratings relative to Amazon",
+        "evidence_offset": 246,
+        "evidence": "Target's ratings relative to Amazon consider its smaller scale at just over $107 billion in revenue, exposure to disrupted and more cyclical categories like apparel and home, higher margins and historically similar leverage profile.\n\nFor AWS, Fitch compares against cloud service industry peers, including Oracle Corporation (BBB/Stable). "
+      },
+      {
+        "name": "AWS global market share",
+        "contents": "over 30% share globally",
+        "value": "30%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "From an Infrastructure-as-a- Service",
+        "evidence_offset": 314,
+        "evidence": "From an Infrastructure-as-a- Service perspective, AWS has a much larger scale (over 30% share globally). However, Oracle has significant legacy enterprise products that support continuing investments in cloud services and provide customer access. Oracle' s ratings, with over $50 billion in annual revenues and reflects its solid position in the Enterprise Resource Planning segment that provides substantial cash generation, with EBITDA leverage expected to sustain near 3."
+      },
+      {
+        "name": "Oracle annual revenues",
+        "contents": "over $50 billion in annual revenues",
+        "value": "$50 billion",
+        "unit": "$",
+        "period": "annual",
+        "evidence_start": "Oracle' s ratings, with over",
+        "evidence_offset": 246,
+        "evidence": "Oracle' s ratings, with over $50 billion in annual revenues and reflects its solid position in the Enterprise Resource Planning segment that provides substantial cash generation, with EBITDA leverage expected to sustain near 3.5x in the near term."
+      },
+      {
+        "name": "Oracle EBITDA leverage",
+        "contents": "EBITDA leverage expected to sustain near 3.5x in the near term",
+        "value": "3.5x",
+        "unit": "x",
+        "period": "in the near term",
+        "evidence_start": "Oracle' s ratings, with over",
+        "evidence_offset": 246,
+        "evidence": "Oracle' s ratings, with over $50 billion in annual revenues and reflects its solid position in the Enterprise Resource Planning segment that provides substantial cash generation, with EBITDA leverage expected to sustain near 3.5x in the near term."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756730556541,
+    "report_id": 756994756730556538,
+    "company_name": "Boeing",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Operational challenges",
+        "contents": "Operational challenges weakened rating factors",
+        "period": null,
+        "evidence_start": "This is largely due to",
+        "evidence_offset": 181,
+        "evidence": "This is largely due to Boeing's operational challenges over the past several years, which have combined to weaken its quantitative rating factors compared with Airbus. Cash flow generation is one of the key differentiators between Airbus and Boeing. "
+      },
+      {
+        "name": "Cash flow generation",
+        "contents": "Cash flow generation differentiates companies",
+        "period": null,
+        "evidence_start": "Cash flow generation is one",
+        "evidence_offset": 77,
+        "evidence": "Cash flow generation is one of the key differentiators between Airbus and Boeing. "
+      },
+      {
+        "name": "737MAX grounding impact",
+        "contents": "737MAX grounding disrupted cash flow and increased debt",
+        "period": null,
+        "evidence_start": "However, the 737MAX grounding",
+        "evidence_offset": 210,
+        "evidence": "However, the 737MAX grounding and subsequent disruptions severely affected Boeing's cash flow and caused debt to rise significantly versus Airbus's.\n\nBoeing's business profile has also been modestly stronger than Airbus's because of a more diverse revenue mix between commercial and defense, in addition to services. "
+      },
+      {
+        "name": "Business profile diversity",
+        "contents": "More diverse revenue mix strengthens business profile",
+        "period": null,
+        "evidence_start": "Boeing's business profile has",
+        "evidence_offset": 153,
+        "evidence": "Boeing's business profile has also been modestly stronger than Airbus's because of a more diverse revenue mix between commercial and defense, in addition to services. "
+      },
+      {
+        "name": "Leverage metrics",
+        "contents": "Airbus has stronger leverage metrics",
+        "period": null,
+        "evidence_start": "Airbus currently has meaningfully",
+        "evidence_offset": 56,
+        "evidence": "Airbus currently has meaningfully stronger leverage metrics. "
+      },
+      {
+        "name": "Net cash position",
+        "contents": "Airbus generally operates with net cash",
+        "period": null,
+        "evidence_start": "Airbus generally operates with",
+        "evidence_offset": 61,
+        "evidence": "Airbus generally operates with a net cash position, though both companies have significant financial flexibility. "
+      },
+      {
+        "name": "Financial flexibility",
+        "contents": "Both companies have significant financial flexibility",
+        "period": null,
+        "evidence_start": "though both companies have",
+        "evidence_offset": 54,
+        "evidence": "Airbus generally operates with a net cash position, though both companies have significant financial flexibility. "
+      },
+      {
+        "name": "Foreign exchange exposure",
+        "contents": "Foreign exchange exposure differentiates companies",
+        "period": null,
+        "evidence_start": "Foreign exchange exposure is also",
+        "evidence_offset": 170,
+        "evidence": "Foreign exchange exposure is also a key differentiator between Boeing and Airbus, with the former having less exposure and the latter with more significant exposure, although Airbus has taken steps to address this."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Rating notch difference",
+        "contents": "Boeing is rated four notches below its most immediate peer, Airbus SE (A/Stable).",
+        "value": "four notches below",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Boeing is rated four",
+        "evidence_offset": 92,
+        "evidence": "Boeing is rated four notches below its most immediate peer, Airbus SE (A/Stable). This is largely due to Boeing's operational challenges over the past several years, which have combined to weaken its quantitative rating factors compared with Airbus. "
+      }
+    ]
+  },
+  {
+    "section_id": 756994756743139401,
+    "report_id": 756994756743139398,
+    "company_name": "Broadcom Inc.",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Operating profile strength",
+        "contents": "Stronger operating profile than peers",
+        "period": null,
+        "evidence_start": "Broadcom's operating profile is stronger",
+        "evidence_offset": 207,
+        "evidence": "Broadcom's operating profile is stronger than those of its peers, including Micron Technology Inc. (BBB/Stable), which is more cyclical and capital-intensive but also more conservatively capitalized. Broadcom's greater financial flexibility and stronger profitability than NXP Semiconductors N."
+      },
+      {
+        "name": "Financial flexibility",
+        "contents": "Greater financial flexibility than NXP",
+        "period": null,
+        "evidence_start": "Broadcom's greater financial flexibility",
+        "evidence_offset": 207,
+        "evidence": "Broadcom's greater financial flexibility and stronger profitability than NXP Semiconductors N.V. (BBB+/Stable) offset NXP's comparatively conservative financial policies.\n\nBroadcom's less conservative financial structure than Marvell Technology Inc. "
+      },
+      {
+        "name": "Profitability",
+        "contents": "Stronger profitability than NXP",
+        "period": null,
+        "evidence_start": "Broadcom's greater financial flexibility",
+        "evidence_offset": 207,
+        "evidence": "Broadcom's greater financial flexibility and stronger profitability than NXP Semiconductors N.V. (BBB+/Stable) offset NXP's comparatively conservative financial policies.\n\nBroadcom's less conservative financial structure than Marvell Technology Inc. "
+      },
+      {
+        "name": "Market position",
+        "contents": "Leading market position offsets structure",
+        "period": null,
+        "evidence_start": "Broadcom's less conservative financial",
+        "evidence_offset": 197,
+        "evidence": "Broadcom's less conservative financial structure than Marvell Technology Inc. (BBB/Stable) is offset by its leading market position and greater diversification. Broadcom's financial policies are more opportunistic than Microchip Technology, Inc. "
+      },
+      {
+        "name": "Diversification",
+        "contents": "Greater diversification offsets structure",
+        "period": null,
+        "evidence_start": "Broadcom's less conservative financial",
+        "evidence_offset": 197,
+        "evidence": "Broadcom's less conservative financial structure than Marvell Technology Inc. (BBB/Stable) is offset by its leading market position and greater diversification. Broadcom's financial policies are more opportunistic than Microchip Technology, Inc. "
+      },
+      {
+        "name": "Financial policy opportunism",
+        "contents": "More opportunistic financial policies",
+        "period": null,
+        "evidence_start": "Broadcom's financial policies are more",
+        "evidence_offset": 202,
+        "evidence": "Broadcom's financial policies are more opportunistic than Microchip Technology, Inc. (BBB/Stable), but are offset by higher market share and diversification and a stronger FCF profile."
+      },
+      {
+        "name": "Market share",
+        "contents": "Higher market share offsets policy",
+        "period": null,
+        "evidence_start": "Broadcom's financial policies are more",
+        "evidence_offset": 202,
+        "evidence": "Broadcom's financial policies are more opportunistic than Microchip Technology, Inc. (BBB/Stable), but are offset by higher market share and diversification and a stronger FCF profile."
+      },
+      {
+        "name": "Free cash flow profile",
+        "contents": "Stronger FCF profile offsets policy",
+        "period": null,
+        "evidence_start": "Broadcom's financial policies are more",
+        "evidence_offset": 202,
+        "evidence": "Broadcom's financial policies are more opportunistic than Microchip Technology, Inc. (BBB/Stable), but are offset by higher market share and diversification and a stronger FCF profile."
+      }
+    ],
+    "variables": []
+  },
+  {
+    "section_id": 756994756751527951,
+    "report_id": 756994756751527948,
+    "company_name": "Charter Communications",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Debt issuance plan",
+        "contents": "Plans to continue issuing debt",
+        "event_type": "Financing",
+        "period": null,
+        "evidence_start": "Charter plans to continue issuing",
+        "evidence_offset": 222,
+        "evidence": "Charter plans to continue issuing debt under additional debt capacity from EBITDA, maintaining a target leverage range of 4.0x-4.5x, with company guidance to a tighter range of 4.0x-4.25x until the close of the Cox transaction. "
+      },
+      {
+        "name": "Cox transaction pending",
+        "contents": "Cox transaction is pending close",
+        "event_type": "Merger/acquisition",
+        "period": "until the close of the Cox transaction",
+        "evidence_start": "Charter plans to continue issuing",
+        "evidence_offset": 222,
+        "evidence": "Charter plans to continue issuing debt under additional debt capacity from EBITDA, maintaining a target leverage range of 4.0x-4.5x, with company guidance to a tighter range of 4.0x-4.25x until the close of the Cox transaction. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Geographic diversity",
+        "contents": "Large size and geographic diversity in MVPD space",
+        "period": null,
+        "evidence_start": "Charter is well positioned in",
+        "evidence_offset": 170,
+        "evidence": "Charter is well positioned in the MVPD space given its size and geographic diversity. It is the largest U.S. cable MVPD with 31.4 million total customer relationships and the largest U."
+      },
+      {
+        "name": "Target leverage policy",
+        "contents": "Target leverage range of 4.0x-4.5x with guidance to 4.0x-4.25x",
+        "period": "until the close of the Cox transaction",
+        "evidence_start": "Charter plans to continue issuing",
+        "evidence_offset": 222,
+        "evidence": "Charter plans to continue issuing debt under additional debt capacity from EBITDA, maintaining a target leverage range of 4.0x-4.5x, with company guidance to a tighter range of 4.0x-4.25x until the close of the Cox transaction. "
+      },
+      {
+        "name": "Use of debt proceeds",
+        "contents": "Proceeds from debt issuance used for shareholder returns, investment, acquisitions",
+        "period": null,
+        "evidence_start": "Fitch expects proceeds from prospective",
+        "evidence_offset": 222,
+        "evidence": "Fitch expects proceeds from prospective debt issuance under this additional debt capacity to be used for shareholder returns, along with internal investment and accretive acquisitions. No country ceiling or parent/subsidiary aspects affect the rating."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Total customer relationships",
+        "contents": "31.4 million total customer relationships",
+        "value": "31.4 million",
+        "unit": "million",
+        "period": null,
+        "evidence_start": "It is the largest U.S.",
+        "evidence_offset": 170,
+        "evidence": "It is the largest U.S. cable MVPD with 31.4 million total customer relationships and the largest U.S. linear video content distributor with 12.7 million customers.\n\nComcast Corp. "
+      },
+      {
+        "name": "Linear video customers",
+        "contents": "12.7 million customers",
+        "value": "12.7 million",
+        "unit": "million",
+        "period": null,
+        "evidence_start": "It is the largest U.S.",
+        "evidence_offset": 170,
+        "evidence": "It is the largest U.S. cable MVPD with 31.4 million total customer relationships and the largest U.S. linear video content distributor with 12.7 million customers.\n\nComcast Corp. "
+      },
+      {
+        "name": "Target leverage range",
+        "contents": "target leverage range of 4.0x-4.5x",
+        "value": "4.0x-4.5x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Charter plans to continue issuing",
+        "evidence_offset": 222,
+        "evidence": "Charter plans to continue issuing debt under additional debt capacity from EBITDA, maintaining a target leverage range of 4.0x-4.5x, with company guidance to a tighter range of 4.0x-4.25x until the close of the Cox transaction. "
+      },
+      {
+        "name": "Guidance leverage range",
+        "contents": "company guidance to a tighter range of 4.0x-4.25x",
+        "value": "4.0x-4.25x",
+        "unit": "x",
+        "period": "until the close of the Cox transaction",
+        "evidence_start": "Charter plans to continue issuing",
+        "evidence_offset": 222,
+        "evidence": "Charter plans to continue issuing debt under additional debt capacity from EBITDA, maintaining a target leverage range of 4.0x-4.5x, with company guidance to a tighter range of 4.0x-4.25x until the close of the Cox transaction. "
+      }
+    ]
+  },
+  {
+    "section_id": 756994756759916562,
+    "report_id": 756994756759916559,
+    "company_name": "Dell",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Juniper Networks acquisition",
+        "contents": "Announced Juniper Networks acquisition",
+        "event_type": "Merger/acquisition",
+        "period": null,
+        "evidence_start": "which is expected to decrease if",
+        "evidence_offset": 163,
+        "evidence": "Dell aims to distribute over 80% FCF, compared to HPE's 60%, which is expected to decrease if HPE closes its Juniper Networks Inc. acquisition.\n\nCompared with HP Inc. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Software content margin",
+        "contents": "Higher software content and margin than Dell",
+        "period": null,
+        "evidence_start": "Hewlett Packard Enterprise Company (HPE;",
+        "evidence_offset": 222,
+        "evidence": "Hewlett Packard Enterprise Company (HPE; BBB+/Stable) has more software content and models, which are relatively higher margin compared to Dell's product portfolio, and has historically had a more conservative financial structure. "
+      },
+      {
+        "name": "Financial structure conservatism",
+        "contents": "Historically more conservative financial structure",
+        "period": null,
+        "evidence_start": "Hewlett Packard Enterprise Company (HPE;",
+        "evidence_offset": 222,
+        "evidence": "Hewlett Packard Enterprise Company (HPE; BBB+/Stable) has more software content and models, which are relatively higher margin compared to Dell's product portfolio, and has historically had a more conservative financial structure. "
+      },
+      {
+        "name": "Shareholder return policy",
+        "contents": "HP plans to return 100% FCF under 2.0x leverage",
+        "period": null,
+        "evidence_start": "HP's shareholder return policy is",
+        "evidence_offset": 202,
+        "evidence": "HP's shareholder return policy is more aggressive than HPE and Dell, with a plan to return approximately 100% of FCF to shareholders while under 2.0x gross leverage."
+      },
+      {
+        "name": "Printing business challenges",
+        "contents": "HP faces secular challenges in printing business",
+        "period": null,
+        "evidence_start": "HP has a comparable PC",
+        "evidence_offset": 120,
+        "evidence": "HP has a comparable PC business and faces secular challenges in its printing business. HP's financial profile is stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. "
+      }
+    ],
+    "variables": [
+      {
+        "name": "FCF distribution target",
+        "contents": "Dell aims to distribute over 80% FCF",
+        "value": "over 80%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Dell aims to distribute over",
+        "evidence_offset": 163,
+        "evidence": "Dell aims to distribute over 80% FCF, compared to HPE's 60%, which is expected to decrease if HPE closes its Juniper Networks Inc. acquisition.\n\nCompared with HP Inc. "
+      },
+      {
+        "name": "FCF distribution target",
+        "contents": "HPE's 60%",
+        "value": "60%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Dell aims to distribute over",
+        "evidence_offset": 163,
+        "evidence": "Dell aims to distribute over 80% FCF, compared to HPE's 60%, which is expected to decrease if HPE closes its Juniper Networks Inc. acquisition.\n\nCompared with HP Inc. "
+      },
+      {
+        "name": "FCF distribution target",
+        "contents": "HP's shareholder return policy is more aggressive than HPE and Dell, with a plan to return approximately 100% of FCF to shareholders while under 2.0x gross leverage.",
+        "value": "approximately 100%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP's shareholder return policy is",
+        "evidence_offset": 202,
+        "evidence": "HP's shareholder return policy is more aggressive than HPE and Dell, with a plan to return approximately 100% of FCF to shareholders while under 2.0x gross leverage."
+      },
+      {
+        "name": "Gross leverage threshold",
+        "contents": "while under 2.0x gross leverage",
+        "value": "2.0x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "HP's shareholder return policy is",
+        "evidence_offset": 202,
+        "evidence": "HP's shareholder return policy is more aggressive than HPE and Dell, with a plan to return approximately 100% of FCF to shareholders while under 2.0x gross leverage."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756764110983,
+    "report_id": 756994756764110980,
+    "company_name": "Delta Air Lines",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Leverage levels",
+        "contents": "Maintained leverage at more favorable levels than peers",
+        "period": null,
+        "evidence_start": "The rating differential is driven",
+        "evidence_offset": 222,
+        "evidence": "The rating differential is driven in part by the fact that Delta has maintained leverage at more favorable levels and better FCF metrics than its peers historically, which Fitch expects to continue through the forecast period. "
+      },
+      {
+        "name": "Free cash flow metrics",
+        "contents": "Maintained better FCF metrics than peers historically",
+        "period": null,
+        "evidence_start": "The rating differential is driven",
+        "evidence_offset": 222,
+        "evidence": "The rating differential is driven in part by the fact that Delta has maintained leverage at more favorable levels and better FCF metrics than its peers historically, which Fitch expects to continue through the forecast period. "
+      },
+      {
+        "name": "Total debt balance",
+        "contents": "Maintains a lower total debt balance than United",
+        "period": null,
+        "evidence_start": "Delta maintains a lower total",
+        "evidence_offset": 97,
+        "evidence": "Delta maintains a lower total debt balance than United, although they are similar on a net basis.\n\n"
+      },
+      {
+        "name": "Capex commitments",
+        "contents": "Has lower capex commitments than United in coming four years",
+        "period": "in the coming four years",
+        "evidence_start": "However, Delta has lower capex",
+        "evidence_offset": 144,
+        "evidence": "However, Delta has lower capex commitments than United in the coming four years and better prospects for FCF generation along with lower execution risk in its fleet renewal plan. "
+      },
+      {
+        "name": "Fleet renewal execution risk",
+        "contents": "Lower execution risk in fleet renewal plan",
+        "period": null,
+        "evidence_start": "However, Delta has lower capex",
+        "evidence_offset": 144,
+        "evidence": "However, Delta has lower capex commitments than United in the coming four years and better prospects for FCF generation along with lower execution risk in its fleet renewal plan. "
+      },
+      {
+        "name": "Net cash position",
+        "contents": "Southwest's net cash position drives rating differential",
+        "period": null,
+        "evidence_start": "The rating differential is largely",
+        "evidence_offset": 108,
+        "evidence": "The rating differential is largely driven by Southwest's net cash position. However, Southwest has limited rating headroom due to near-term profitability pressures.\n\n"
+      },
+      {
+        "name": "Profitability pressures",
+        "contents": "Southwest has limited rating headroom due to near-term profitability pressures",
+        "period": "near-term",
+        "evidence_start": "However, Southwest has limited rating",
+        "evidence_offset": 97,
+        "evidence": "However, Southwest has limited rating headroom due to near-term profitability pressures.\n\nDelta compares favorably with investment-grade peers in Europe. "
+      },
+      {
+        "name": "Gross leverage alignment",
+        "contents": "Expected to maintain gross leverage in line with Lufthansa",
+        "period": null,
+        "evidence_start": "Fitch expects Delta to maintain",
+        "evidence_offset": 120,
+        "evidence": "Fitch expects Delta to maintain gross leverage in line with Deutsche Lufthansa's (BBB-/Stable) and marginally better than Air France/KLM's (BBB-/Stable). "
+      },
+      {
+        "name": "Business profile benefits",
+        "contents": "Business profile benefits from size and foreign-exchange exposure",
+        "period": null,
+        "evidence_start": "Delta's business profile also benefits",
+        "evidence_offset": 99,
+        "evidence": "Delta's business profile also benefits from its size and foreign-exchange exposure relative to European peers."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Delta rating",
+        "contents": "Delta's 'BBB-' rating",
+        "value": "BBB-",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta's 'BBB-' rating is",
+        "evidence_offset": 87,
+        "evidence": "Delta's 'BBB-' rating is higher than that of its two major network competitors, United Airlines, Inc. "
+      },
+      {
+        "name": "United Airlines rating",
+        "contents": "United Airlines, Inc. (BB/Positive)",
+        "value": "BB/Positive",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta's 'BBB-' rating is",
+        "evidence_offset": 87,
+        "evidence": "Delta's 'BBB-' rating is higher than that of its two major network competitors, United Airlines, Inc. "
+      },
+      {
+        "name": "American Airlines rating",
+        "contents": "American Airlines, Inc. (B+/Stable)",
+        "value": "B+/Stable",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta's 'BBB-' rating is",
+        "evidence_offset": 87,
+        "evidence": "Delta's 'BBB-' rating is higher than that of its two major network competitors, United Airlines, Inc. "
+      },
+      {
+        "name": "Southwest Airlines rating",
+        "contents": "Southwest Airlines Co. (BBB+/Negative)",
+        "value": "BBB+/Negative",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta is rated two notches",
+        "evidence_offset": 97,
+        "evidence": "Delta is rated two notches lower than Southwest Airlines Co. (BBB+/Negative). The rating differential is largely driven by Southwest's net cash position. "
+      },
+      {
+        "name": "Deutsche Lufthansa rating",
+        "contents": "Deutsche Lufthansa's (BBB-/Stable)",
+        "value": "BBB-/Stable",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Fitch expects Delta to maintain",
+        "evidence_offset": 120,
+        "evidence": "Fitch expects Delta to maintain gross leverage in line with Deutsche Lufthansa's (BBB-/Stable) and marginally better than Air France/KLM's (BBB-/Stable). "
+      },
+      {
+        "name": "Air France/KLM rating",
+        "contents": "Air France/KLM's (BBB-/Stable)",
+        "value": "BBB-/Stable",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Fitch expects Delta to maintain",
+        "evidence_offset": 120,
+        "evidence": "Fitch expects Delta to maintain gross leverage in line with Deutsche Lufthansa's (BBB-/Stable) and marginally better than Air France/KLM's (BBB-/Stable). "
+      }
+    ]
+  },
+  {
+    "section_id": 756994756768305154,
+    "report_id": 756994756764110992,
+    "company_name": "Delta Air Lines",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Leverage and FCF metrics",
+        "contents": "Leverage and FCF metrics favorable to peers drive rating differential.",
+        "period": "through the forecast period",
+        "evidence_start": "The rating differential is driven",
+        "evidence_offset": 181,
+        "evidence": "The rating differential is driven in part by Fitch's expectations for Delta to maintain leverage and FCF metrics favorable to its peers through the forecast period. Delta maintains a lower total debt balance than United, but they are similar on a net basis.\n\n"
+      },
+      {
+        "name": "Lower capital spending commitments",
+        "contents": "Lower capital spending commitments than United in coming years.",
+        "period": "in the coming years",
+        "evidence_start": "However, Delta has lower capital",
+        "evidence_offset": 144,
+        "evidence": "However, Delta has lower capital spending commitments than United in the coming years and better prospects for FCF generation along with lower execution risk relative to United's fleet renewal plan. "
+      },
+      {
+        "name": "Better FCF generation prospects",
+        "contents": "Better prospects for FCF generation than United.",
+        "period": null,
+        "evidence_start": "However, Delta has lower capital",
+        "evidence_offset": 144,
+        "evidence": "However, Delta has lower capital spending commitments than United in the coming years and better prospects for FCF generation along with lower execution risk relative to United's fleet renewal plan. "
+      },
+      {
+        "name": "Lower execution risk",
+        "contents": "Lower execution risk relative to United's fleet renewal plan.",
+        "period": null,
+        "evidence_start": "However, Delta has lower capital",
+        "evidence_offset": 144,
+        "evidence": "However, Delta has lower capital spending commitments than United in the coming years and better prospects for FCF generation along with lower execution risk relative to United's fleet renewal plan. "
+      },
+      {
+        "name": "Southwest net cash position",
+        "contents": "Southwest's net cash position drives higher rating.",
+        "period": null,
+        "evidence_start": "The rating differential is largely",
+        "evidence_offset": 144,
+        "evidence": "The rating differential is largely driven by Southwest's balance sheet, as it remains in a net cash position. However, Southwest has limited headroom at its current rating due to near-term profitability pressures.\n\n"
+      },
+      {
+        "name": "Southwest profitability pressures",
+        "contents": "Southwest has limited headroom due to near-term profitability pressures.",
+        "period": "near-term",
+        "evidence_start": "However, Southwest has limited headroom",
+        "evidence_offset": 109,
+        "evidence": "However, Southwest has limited headroom at its current rating due to near-term profitability pressures.\n\nDelta compares well to investment grade peers in Europe. "
+      },
+      {
+        "name": "Gross leverage metrics alignment",
+        "contents": "Delta expected to maintain gross leverage metrics in line with Lufthansa.",
+        "period": null,
+        "evidence_start": "Fitch expects Delta to maintain",
+        "evidence_offset": 144,
+        "evidence": "Fitch expects Delta to maintain gross leverage metrics in line with Deutsche Lufthansa AG (BBB-/Stable) and marginally better than Air France KLM (BBB-/Stable). "
+      },
+      {
+        "name": "Superior FCF metrics to Europe",
+        "contents": "Delta's FCF metrics expected to be better than European counterparts.",
+        "period": null,
+        "evidence_start": "FCF metrics are expected to",
+        "evidence_offset": 74,
+        "evidence": "FCF metrics are expected to be better for Delta than its European counterparts. "
+      },
+      {
+        "name": "Business profile benefits",
+        "contents": "Business profile benefits from size, scale, and FX exposure.",
+        "period": null,
+        "evidence_start": "Delta's business profile also benefits",
+        "evidence_offset": 120,
+        "evidence": "Delta's business profile also benefits from its relative size and scale and foreign exchange exposure compared European peers."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Delta rating",
+        "contents": "Delta's 'BBB-' rating",
+        "value": "BBB-",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta's 'BBB-' rating is",
+        "evidence_offset": 74,
+        "evidence": "Delta's 'BBB-' rating is higher than its two major network competitors: United Airlines, Inc. "
+      },
+      {
+        "name": "United Airlines rating",
+        "contents": "United Airlines, Inc. (BB/Positive)",
+        "value": "BB/Positive",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta's 'BBB-' rating is",
+        "evidence_offset": 74,
+        "evidence": "Delta's 'BBB-' rating is higher than its two major network competitors: United Airlines, Inc. "
+      },
+      {
+        "name": "American Airlines rating",
+        "contents": "American Airlines, Inc. (B+/Stable)",
+        "value": "B+/Stable",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta's 'BBB-' rating is",
+        "evidence_offset": 74,
+        "evidence": "Delta's 'BBB-' rating is higher than its two major network competitors: United Airlines, Inc. "
+      },
+      {
+        "name": "Southwest Airlines rating",
+        "contents": "Southwest Airlines Co. (BBB+/Negative)",
+        "value": "BBB+/Negative",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Delta is rated two notches",
+        "evidence_offset": 98,
+        "evidence": "Delta is rated two notches lower than Southwest Airlines Co. (BBB+/Negative). The rating differential is largely driven by Southwest's balance sheet, as it remains in a net cash position. "
+      },
+      {
+        "name": "Lufthansa rating",
+        "contents": "Deutsche Lufthansa AG (BBB-/Stable)",
+        "value": "BBB-/Stable",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Fitch expects Delta to maintain",
+        "evidence_offset": 144,
+        "evidence": "Fitch expects Delta to maintain gross leverage metrics in line with Deutsche Lufthansa AG (BBB-/Stable) and marginally better than Air France KLM (BBB-/Stable). "
+      },
+      {
+        "name": "Air France KLM rating",
+        "contents": "Air France KLM (BBB-/Stable)",
+        "value": "BBB-/Stable",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Fitch expects Delta to maintain",
+        "evidence_offset": 144,
+        "evidence": "Fitch expects Delta to maintain gross leverage metrics in line with Deutsche Lufthansa AG (BBB-/Stable) and marginally better than Air France KLM (BBB-/Stable). "
+      }
+    ]
+  },
+  {
+    "section_id": 756994756768305222,
+    "report_id": 756994756768305219,
+    "company_name": "Frontier Communications",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Consumer market exposure",
+        "contents": "Higher exposure to consumer market than peers",
+        "period": null,
+        "evidence_start": "Frontier has higher exposure to",
+        "evidence_offset": 187,
+        "evidence": "Frontier has higher exposure to the consumer market compared with wireline peer Lumen Technologies, Inc. (CCC+), and Windstream Services, LLC (B/Ratings Watch Evolving). The consumer market faces secular challenges (particularly in voice/video), with legacy revenue declines in older copper-based communication technologies being only somewhat offset by growth in faster, fiber-based technology. "
+      },
+      {
+        "name": "Secular challenges in consumer market",
+        "contents": "Consumer market faces secular challenges, especially in voice/video",
+        "period": null,
+        "evidence_start": "The consumer market faces secular",
+        "evidence_offset": 234,
+        "evidence": "The consumer market faces secular challenges (particularly in voice/video), with legacy revenue declines in older copper-based communication technologies being only somewhat offset by growth in faster, fiber-based technology. Incumbent wireline operators face competition for broadband customers from cable operators, including Comcast Corp. "
+      },
+      {
+        "name": "Legacy revenue declines",
+        "contents": "Legacy revenue declines in copper-based technologies",
+        "period": null,
+        "evidence_start": "The consumer market faces secular",
+        "evidence_offset": 234,
+        "evidence": "The consumer market faces secular challenges (particularly in voice/video), with legacy revenue declines in older copper-based communication technologies being only somewhat offset by growth in faster, fiber-based technology. Incumbent wireline operators face competition for broadband customers from cable operators, including Comcast Corp. "
+      },
+      {
+        "name": "Fiber technology revenue growth",
+        "contents": "Growth in fiber-based technology partially offsets legacy declines",
+        "period": null,
+        "evidence_start": "The consumer market faces secular",
+        "evidence_offset": 234,
+        "evidence": "The consumer market faces secular challenges (particularly in voice/video), with legacy revenue declines in older copper-based communication technologies being only somewhat offset by growth in faster, fiber-based technology. Incumbent wireline operators face competition for broadband customers from cable operators, including Comcast Corp. "
+      },
+      {
+        "name": "Broadband competition from cable",
+        "contents": "Wireline operators face broadband competition from cable operators",
+        "period": null,
+        "evidence_start": "Incumbent wireline operators face competition",
+        "evidence_offset": 191,
+        "evidence": "Incumbent wireline operators face competition for broadband customers from cable operators, including Comcast Corp. (A-/Stable) and Charter Communications Inc. (BB+/RWP).\n\nFrontier also faces emerging broadband competition from 5G wireless operators offering fixed wireless access, including T-Mobile U."
+      },
+      {
+        "name": "Broadband competition from 5G wireless",
+        "contents": "Emerging broadband competition from 5G wireless operators",
+        "period": null,
+        "evidence_start": "Frontier also faces emerging broadband",
+        "evidence_offset": 222,
+        "evidence": "Frontier also faces emerging broadband competition from 5G wireless operators offering fixed wireless access, including T-Mobile U.S. Inc. (BBB+/Stable) and Verizon Communications Inc.. Fitch expects Frontier's aggressive fiber investments to have long-term benefits, but it will require significant near-term costs that will weigh on cash flow generation.\n\n"
+      },
+      {
+        "name": "Aggressive fiber investments",
+        "contents": "Aggressive fiber investments require significant near-term costs",
+        "period": null,
+        "evidence_start": "Fitch expects Frontier's aggressive fiber",
+        "evidence_offset": 202,
+        "evidence": "Fitch expects Frontier's aggressive fiber investments to have long-term benefits, but it will require significant near-term costs that will weigh on cash flow generation.\n\nFrontier is less competitive in the enterprise market, although its enterprise business is less exposed to large enterprise accounts than its larger peers. "
+      },
+      {
+        "name": "Near-term cash flow pressure",
+        "contents": "Significant near-term costs will weigh on cash flow generation",
+        "period": null,
+        "evidence_start": "Fitch expects Frontier's aggressive fiber",
+        "evidence_offset": 202,
+        "evidence": "Fitch expects Frontier's aggressive fiber investments to have long-term benefits, but it will require significant near-term costs that will weigh on cash flow generation.\n\nFrontier is less competitive in the enterprise market, although its enterprise business is less exposed to large enterprise accounts than its larger peers. "
+      },
+      {
+        "name": "Lower enterprise market competitiveness",
+        "contents": "Less competitive in the enterprise market than peers",
+        "period": null,
+        "evidence_start": "Frontier is less competitive in",
+        "evidence_offset": 181,
+        "evidence": "Frontier is less competitive in the enterprise market, although its enterprise business is less exposed to large enterprise accounts than its larger peers. In enterprise, Frontier is smaller than AT&T Inc. "
+      },
+      {
+        "name": "Smaller enterprise business exposure",
+        "contents": "Enterprise business less exposed to large enterprise accounts than peers",
+        "period": null,
+        "evidence_start": "Frontier is less competitive in",
+        "evidence_offset": 181,
+        "evidence": "Frontier is less competitive in the enterprise market, although its enterprise business is less exposed to large enterprise accounts than its larger peers. In enterprise, Frontier is smaller than AT&T Inc. "
+      },
+      {
+        "name": "Smaller scale than major peers",
+        "contents": "Smaller than AT&T, Verizon, and Lumen in enterprise",
+        "period": null,
+        "evidence_start": "In enterprise, Frontier is smaller",
+        "evidence_offset": 181,
+        "evidence": "In enterprise, Frontier is smaller than AT&T Inc. (BBB+/Stable), Verizon and Lumen. All three companies have an advantage as national or multinational companies due to their extensive footprints in the U."
+      },
+      {
+        "name": "National/multinational footprint advantage",
+        "contents": "National or multinational companies have advantage due to extensive footprints",
+        "period": null,
+        "evidence_start": "All three companies have an advantage",
+        "evidence_offset": 181,
+        "evidence": "All three companies have an advantage as national or multinational companies due to their extensive footprints in the U.S. and abroad. Windstream Services, LLC is somewhat smaller than Frontier and is a hybrid that operates as an incumbent in rural markets and as a business services provider with its enterprise and wholesale units, which compete nationally. "
+      },
+      {
+        "name": "Lower scale and diversification",
+        "contents": "AT&T and Verizon have larger scale and greater business diversification",
+        "period": null,
+        "evidence_start": "Compared with Frontier, AT&T and",
+        "evidence_offset": 181,
+        "evidence": "Compared with Frontier, AT&T and Verizon have significantly larger scale, greater business diversification and meaningfully lower financial leverage as investment grade operators."
+      },
+      {
+        "name": "Lower financial leverage of peers",
+        "contents": "AT&T and Verizon have meaningfully lower financial leverage as investment grade operators",
+        "period": null,
+        "evidence_start": "Compared with Frontier, AT&T and",
+        "evidence_offset": 181,
+        "evidence": "Compared with Frontier, AT&T and Verizon have significantly larger scale, greater business diversification and meaningfully lower financial leverage as investment grade operators."
+      }
+    ],
+    "variables": []
+  },
+  {
+    "section_id": 756994756772499526,
+    "report_id": 756994756772499523,
+    "company_name": "General Motors",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Geographic concentration risk",
+        "contents": "Heavy reliance on North America for profit and FCF generation",
+        "period": null,
+        "evidence_start": "However, it is geographically less",
+        "evidence_offset": 252,
+        "evidence": "However, it is geographically less diversified than most major global mass-market auto manufacturers, with very little presence in Western Europe and a heavy reliance on North America for much of its profit and FCF generation.\n\nGM's product diversity is relatively high, with Chevrolet and Cadillac serving as its anchor brands, augmented by Buick and GMC. "
+      },
+      {
+        "name": "Product diversity",
+        "contents": "High product diversity with multiple brands across segments",
+        "period": null,
+        "evidence_start": "GM's product diversity is relatively",
+        "evidence_offset": 181,
+        "evidence": "GM's product diversity is relatively high, with Chevrolet and Cadillac serving as its anchor brands, augmented by Buick and GMC. The company manufactures passenger and light commercial vehicles spanning the mass-market and luxury segments. "
+      },
+      {
+        "name": "Luxury segment weakness",
+        "contents": "Luxury sales much lower than dedicated luxury manufacturers",
+        "period": null,
+        "evidence_start": "However, luxury sales, represented by",
+        "evidence_offset": 323,
+        "evidence": "However, luxury sales, represented by Cadillac, remain much lower than those of dedicated luxury manufacturers, such as Mercedes-Benz Group AG (A/Stable), Bayerische Motoren Werke AG or the luxury divisions of global mass-market competitors such as Toyota Motor Corporation (A+/Stable).\n\nGM's financial profile is relatively strong compared to similar mass-market peers. "
+      },
+      {
+        "name": "Margin pressure risk",
+        "contents": "Margins could come under pressure from electrification initiatives",
+        "period": "over the intermediate term",
+        "evidence_start": "However, margins could come under",
+        "evidence_offset": 181,
+        "evidence": "However, margins could come under some pressure over the intermediate term as the company accelerates its electrification initiatives. Leverage remains relatively low compared to its peer group, with gross EBITDA leverage generally running around 1."
+      },
+      {
+        "name": "Low leverage",
+        "contents": "Leverage remains relatively low compared to peers",
+        "period": null,
+        "evidence_start": "Leverage remains relatively low compared",
+        "evidence_offset": 110,
+        "evidence": "Leverage remains relatively low compared to its peer group, with gross EBITDA leverage generally running around 1."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Gross EBITDA leverage",
+        "contents": "gross EBITDA leverage generally running around 1.0x",
+        "value": "1.0x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Leverage remains relatively low compared",
+        "evidence_offset": 110,
+        "evidence": "Leverage remains relatively low compared to its peer group, with gross EBITDA leverage generally running around 1."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756776693801,
+    "report_id": 756994756776693798,
+    "company_name": "HP Inc.",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "HPE Juniper acquisition financing",
+        "contents": "Included current and expected financing",
+        "event_type": "Financing",
+        "period": null,
+        "evidence_start": "Inclusive of current and expected",
+        "evidence_offset": 252,
+        "evidence": "Inclusive of current and expected financing related to HPE's Juniper acquisition, HPE's core EBITDA is expected to increase approximately 1x above HP's, if the acquisition closes. However, this increase is expected to normalize over a period of deleveraging.\n\n"
+      },
+      {
+        "name": "HPE Juniper acquisition announcement",
+        "contents": "HPE announced Juniper acquisition",
+        "event_type": "Merger/acquisition",
+        "period": null,
+        "evidence_start": "Inclusive of current and expected",
+        "evidence_offset": 252,
+        "evidence": "Inclusive of current and expected financing related to HPE's Juniper acquisition, HPE's core EBITDA is expected to increase approximately 1x above HP's, if the acquisition closes. However, this increase is expected to normalize over a period of deleveraging.\n\n"
+      }
+    ],
+    "factors": [
+      {
+        "name": "Server and storage exposure",
+        "contents": "Exposure to server and storage market benefits business profile",
+        "period": null,
+        "evidence_start": "Dell Technologies, Inc.'s (BBB/F2/Positive) relative business profile benefits from its exposure to the server and storage market.",
+        "evidence_offset": 143,
+        "evidence": "Dell Technologies, Inc.'s (BBB/F2/Positive) relative business profile benefits from its exposure to the server and storage market. HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). "
+      },
+      {
+        "name": "Printing business secular challenges",
+        "contents": "Secular challenges in printing business constrain profile",
+        "period": null,
+        "evidence_start": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%).",
+        "evidence_offset": 163,
+        "evidence": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). HP's financial profile has historically remained stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. "
+      },
+      {
+        "name": "Shareholder return policy",
+        "contents": "HP returns 100% of FCF to shareholders",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE.",
+        "evidence_offset": 207,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "M&A as growth component",
+        "contents": "HPE considers M&A a core growth component",
+        "period": null,
+        "evidence_start": "The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth.",
+        "evidence_offset": 143,
+        "evidence": "The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. Dell focuses on smaller, more strategic value tuck-in acquisitions.\n\n"
+      },
+      {
+        "name": "Leverage target support",
+        "contents": "Explicit leverage target supports credit profile",
+        "period": null,
+        "evidence_start": "Fitch views HP's financial policy in the context of its explicit leverage target as supportive of its credit profile.",
+        "evidence_offset": 134,
+        "evidence": "However, while the underlying sector trend is a constraint on the rating, Fitch views HP's financial policy in the context of its explicit leverage target as supportive of its credit profile."
+      }
+    ],
+    "variables": [
+      {
+        "name": "EBITDA margin HP",
+        "contents": "EBITDA margins (both about 10%)",
+        "value": "about 10%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%).",
+        "evidence_offset": 163,
+        "evidence": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). HP's financial profile has historically remained stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. "
+      },
+      {
+        "name": "EBITDA margin Dell",
+        "contents": "EBITDA margins (both about 10%)",
+        "value": "about 10%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%).",
+        "evidence_offset": 163,
+        "evidence": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). HP's financial profile has historically remained stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. "
+      },
+      {
+        "name": "FCF return HP",
+        "contents": "returns about 100% of FCF to shareholders",
+        "value": "about 100%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE.",
+        "evidence_offset": 207,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "FCF return Dell",
+        "contents": "compared to 80%+ FCF at Dell",
+        "value": "80%+",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE.",
+        "evidence_offset": 207,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "FCF return HPE",
+        "contents": "60% at HPE",
+        "value": "60%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE.",
+        "evidence_offset": 207,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "EBITDA increase HPE vs HP",
+        "contents": "HPE's core EBITDA is expected to increase approximately 1x above HP's",
+        "value": "approximately 1x above HP's",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Inclusive of current and expected financing related to HPE's Juniper acquisition, HPE's core EBITDA is expected to increase approximately 1x above HP's, if the acquisition closes.",
+        "evidence_offset": 252,
+        "evidence": "Inclusive of current and expected financing related to HPE's Juniper acquisition, HPE's core EBITDA is expected to increase approximately 1x above HP's, if the acquisition closes. However, this increase is expected to normalize over a period of deleveraging.\n\n"
+      }
+    ]
+  },
+  {
+    "section_id": 756994756776693813,
+    "report_id": 756994756776693810,
+    "company_name": "HP Inc.",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "HPE Juniper acquisition financing",
+        "contents": "Included current and expected financing",
+        "event_type": "Financing",
+        "period": "current and expected",
+        "evidence_start": "Inclusive of current and expected",
+        "evidence_offset": 277,
+        "evidence": "Inclusive of current and expected financing related to HPE's Juniper acquisition, HPE's core EBITDA is expected to increase approximately 1x above HP's, if the acquisition closes. However, this increase is expected to normalize over a period of deleveraging.\n\nHP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Server and storage exposure",
+        "contents": "Exposure to server and storage market benefits business profile",
+        "period": null,
+        "evidence_start": "Dell Technologies, Inc.'s (BBB/F2/Positive)",
+        "evidence_offset": 144,
+        "evidence": "Dell Technologies, Inc.'s (BBB/F2/Positive) relative business profile benefits from its exposure to the server and storage market. HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). "
+      },
+      {
+        "name": "Printing business secular challenges",
+        "contents": "Secular challenges in printing business constrain profile and margins",
+        "period": null,
+        "evidence_start": "HP has a comparable PC business",
+        "evidence_offset": 181,
+        "evidence": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). HP's financial profile has historically remained stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. "
+      },
+      {
+        "name": "Shareholder return policy",
+        "contents": "Larger shareholder return policy supports financial flexibility",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return",
+        "evidence_offset": 180,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "M&A as growth component",
+        "contents": "M&A considered a core component of expected growth at HPE",
+        "period": null,
+        "evidence_start": "The differences in return policy",
+        "evidence_offset": 181,
+        "evidence": "The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. Dell focuses on smaller, more strategic value tuck-in acquisitions.\n\n"
+      },
+      {
+        "name": "Leverage target policy",
+        "contents": "Explicit leverage target supports credit profile",
+        "period": null,
+        "evidence_start": "However, while the underlying sector",
+        "evidence_offset": 314,
+        "evidence": "However, while the underlying sector trend is a constraint on the rating, Fitch views HP's financial policy in the context of its explicit leverage target as supportive of its credit profile."
+      }
+    ],
+    "variables": [
+      {
+        "name": "EBITDA margin HP",
+        "contents": "EBITDA margins (both about 10%)",
+        "value": "about 10%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a comparable PC business",
+        "evidence_offset": 181,
+        "evidence": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). HP's financial profile has historically remained stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. "
+      },
+      {
+        "name": "EBITDA margin Dell",
+        "contents": "EBITDA margins (both about 10%)",
+        "value": "about 10%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a comparable PC business",
+        "evidence_offset": 181,
+        "evidence": "HP has a comparable PC business and faces secular challenges in its printing business, which is reflected in EBITDA margins (both about 10%). HP's financial profile has historically remained stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. "
+      },
+      {
+        "name": "FCF margin HP",
+        "contents": "higher FCF margins",
+        "value": "higher",
+        "unit": null,
+        "period": null,
+        "evidence_start": "HP's financial profile has historically",
+        "evidence_offset": 170,
+        "evidence": "HP's financial profile has historically remained stronger than Dell's, with higher FCF margins and a historically more conservative financial structure. However, in recent years Dell has shrunk the financial structure differences.\n\n"
+      },
+      {
+        "name": "Shareholder return ratio HP",
+        "contents": "returns about 100% of FCF to shareholders",
+        "value": "about 100%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return",
+        "evidence_offset": 180,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "Shareholder return ratio Dell",
+        "contents": "80%+ FCF at Dell",
+        "value": "80%+",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return",
+        "evidence_offset": 180,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "Shareholder return ratio HPE",
+        "contents": "60% at HPE",
+        "value": "60%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "HP has a larger shareholder return",
+        "evidence_offset": 180,
+        "evidence": "HP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. The differences in return policy are partially explained by HPE's practice of considering M&A a core component of its expected growth. "
+      },
+      {
+        "name": "EBITDA increase HPE vs HP",
+        "contents": "HPE's core EBITDA is expected to increase approximately 1x above HP's",
+        "value": "approximately 1x",
+        "unit": "x",
+        "period": "if the acquisition closes",
+        "evidence_start": "Inclusive of current and expected",
+        "evidence_offset": 277,
+        "evidence": "Inclusive of current and expected financing related to HPE's Juniper acquisition, HPE's core EBITDA is expected to increase approximately 1x above HP's, if the acquisition closes. However, this increase is expected to normalize over a period of deleveraging.\n\nHP has a larger shareholder return policy than Dell or HPE, which returns about 100% of FCF to shareholders compared to 80%+ FCF at Dell and 60% at HPE. "
+      }
+    ]
+  },
+  {
+    "section_id": 756994756785082476,
+    "report_id": 756994756785082473,
+    "company_name": "Kohl’s",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Omnichannel investment",
+        "contents": "Invested in omnichannel models",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Their initiatives include investments",
+        "evidence_offset": 202,
+        "evidence": "Their initiatives include investments in omnichannel models, reshaping portfolios to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\nThese initiatives have had varying levels of success in recent years, with Dillard's showing the best operating trajectory. "
+      },
+      {
+        "name": "Portfolio reshaping",
+        "contents": "Reshaped portfolios to reduce exposure",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Their initiatives include investments",
+        "evidence_offset": 202,
+        "evidence": "Their initiatives include investments in omnichannel models, reshaping portfolios to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\nThese initiatives have had varying levels of success in recent years, with Dillard's showing the best operating trajectory. "
+      },
+      {
+        "name": "Merchandise and service improvement",
+        "contents": "Strengthened merchandise and service",
+        "event_type": "Product/service",
+        "period": null,
+        "evidence_start": "Their initiatives include investments",
+        "evidence_offset": 202,
+        "evidence": "Their initiatives include investments in omnichannel models, reshaping portfolios to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\nThese initiatives have had varying levels of success in recent years, with Dillard's showing the best operating trajectory. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Secular industry headwinds",
+        "contents": "Secular industry headwinds affecting department stores",
+        "period": null,
+        "evidence_start": "Each is contending with the",
+        "evidence_offset": 134,
+        "evidence": "Each is contending with the industry's secular headwinds and is continuously refining strategies to defend market share. Their initiatives include investments in omnichannel models, reshaping portfolios to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\n"
+      },
+      {
+        "name": "Execution challenges",
+        "contents": "Execution challenges limit advantage realization",
+        "period": null,
+        "evidence_start": "However, neither has demonstrated the",
+        "evidence_offset": 277,
+        "evidence": "However, neither has demonstrated the ability to capitalize on these fundamental advantages, which Fitch believes is likely due to execution challenges.\n\nDillard's has modest leverage due to its limited debt levels. Fitch projects Macy's EBITDAR leverage to trend in the high-2x range, while Nordstrom's EBITDAR leverage could trend near the 3x range. "
+      },
+      {
+        "name": "Off-mall real estate positioning",
+        "contents": "Off-mall real estate positioning benefits Kohl's",
+        "period": null,
+        "evidence_start": "In particular, Kohl's should",
+        "evidence_offset": 246,
+        "evidence": "In particular, Kohl's should benefit from its off-mall real estate positioning, while Nordstrom should benefit from its exposure to the off-price subsector and the higher-end merchandise positioning of its full price locations. However, neither has demonstrated the ability to capitalize on these fundamental advantages, which Fitch believes is likely due to execution challenges.\n\n"
+      },
+      {
+        "name": "Off-price and high-end exposure",
+        "contents": "Off-price and high-end positioning benefits Nordstrom",
+        "period": null,
+        "evidence_start": "while Nordstrom should benefit",
+        "evidence_offset": 246,
+        "evidence": "In particular, Kohl's should benefit from its off-mall real estate positioning, while Nordstrom should benefit from its exposure to the off-price subsector and the higher-end merchandise positioning of its full price locations. However, neither has demonstrated the ability to capitalize on these fundamental advantages, which Fitch believes is likely due to execution challenges.\n\n"
+      }
+    ],
+    "variables": [
+      {
+        "name": "EBITDAR leverage Macy's",
+        "contents": "Macy's EBITDAR leverage to trend in the high-2x range",
+        "value": "high-2x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Fitch projects Macy's EBITDAR",
+        "evidence_offset": 120,
+        "evidence": "Fitch projects Macy's EBITDAR leverage to trend in the high-2x range, while Nordstrom's EBITDAR leverage could trend near the 3x range. "
+      },
+      {
+        "name": "EBITDAR leverage Nordstrom",
+        "contents": "Nordstrom's EBITDAR leverage could trend near the 3x range",
+        "value": "3x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "while Nordstrom's EBITDAR leverage",
+        "evidence_offset": 120,
+        "evidence": "Fitch projects Macy's EBITDAR leverage to trend in the high-2x range, while Nordstrom's EBITDAR leverage could trend near the 3x range. "
+      },
+      {
+        "name": "EBITDA Kohl's",
+        "contents": "Kohl's leverage to trend in the low-4x range, assuming it can stabilize EBITDA around $800 million",
+        "value": "$800 million",
+        "unit": "$",
+        "period": null,
+        "evidence_start": "Fitch expects Kohl's leverage",
+        "evidence_offset": 120,
+        "evidence": "Fitch expects Kohl's leverage to trend in the low-4x range, assuming it can stabilize EBITDA around $800 million."
+      },
+      {
+        "name": "EBITDAR leverage Kohl's",
+        "contents": "Kohl's leverage to trend in the low-4x range",
+        "value": "low-4x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Fitch expects Kohl's leverage",
+        "evidence_offset": 120,
+        "evidence": "Fitch expects Kohl's leverage to trend in the low-4x range, assuming it can stabilize EBITDA around $800 million."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756785082489,
+    "report_id": 756994756785082486,
+    "company_name": "Kohl’s",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Omnichannel investment",
+        "contents": "Invested in omnichannel models",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 206,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\nThese initiatives have had varying levels of success in recent years, with Dillard's showing the best operating trajectory. "
+      },
+      {
+        "name": "Portfolio reshaping",
+        "contents": "Reshaped portfolio to reduce exposure",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 206,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\nThese initiatives have had varying levels of success in recent years, with Dillard's showing the best operating trajectory. "
+      },
+      {
+        "name": "Merchandise and service improvement",
+        "contents": "Strengthened merchandise and service",
+        "event_type": "Product/service",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 206,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\nThese initiatives have had varying levels of success in recent years, with Dillard's showing the best operating trajectory. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Secular industry headwinds",
+        "contents": "Secular industry headwinds affecting department stores",
+        "period": null,
+        "evidence_start": "Each is contending with the",
+        "evidence_offset": 120,
+        "evidence": "Each is contending with the industry's secular headwinds and continuously refining strategies to defend market share. Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and efforts to strengthen merchandise assortments and service levels.\n\n"
+      },
+      {
+        "name": "Execution challenges",
+        "contents": "Execution challenges limiting advantage realization",
+        "period": null,
+        "evidence_start": "However, neither has demonstrated an",
+        "evidence_offset": 222,
+        "evidence": "However, neither has demonstrated an ability to capitalize on what should be fundamental advantages, which Fitch expects is likely due to execution challenges.\n\nDillard's has modest leverage given limited debt levels. Fitch projects Macy's EBITDAR leverage to trend in the high-2x range while Nordstrom's EBITDAR leverage could trend near 3x. "
+      },
+      {
+        "name": "Relative scale and cash flow",
+        "contents": "Greater scale and cash flow enable investment",
+        "period": null,
+        "evidence_start": "Structurally, the three national",
+        "evidence_offset": 202,
+        "evidence": "Structurally, the three national players should be best positioned to accelerate investment and transformation efforts given greater relative scale and cash flow generation. In particular, Kohl's should benefit from its off-mall real estate positioning, while Nordstrom should benefit from its exposure to the off-price subsector and the higher-end merchandise positioning of its full price locations. "
+      },
+      {
+        "name": "Off-mall real estate positioning",
+        "contents": "Off-mall real estate positioning benefits Kohl's",
+        "period": null,
+        "evidence_start": "In particular, Kohl's should",
+        "evidence_offset": 180,
+        "evidence": "In particular, Kohl's should benefit from its off-mall real estate positioning, while Nordstrom should benefit from its exposure to the off-price subsector and the higher-end merchandise positioning of its full price locations. "
+      },
+      {
+        "name": "Off-price and high-end exposure",
+        "contents": "Off-price and high-end exposure benefits Nordstrom",
+        "period": null,
+        "evidence_start": "while Nordstrom should benefit",
+        "evidence_offset": 180,
+        "evidence": "In particular, Kohl's should benefit from its off-mall real estate positioning, while Nordstrom should benefit from its exposure to the off-price subsector and the higher-end merchandise positioning of its full price locations. "
+      },
+      {
+        "name": "Modest leverage at Dillard's",
+        "contents": "Modest leverage due to limited debt at Dillard's",
+        "period": null,
+        "evidence_start": "Dillard's has modest leverage given",
+        "evidence_offset": 56,
+        "evidence": "Dillard's has modest leverage given limited debt levels. "
+      }
+    ],
+    "variables": [
+      {
+        "name": "Macy's EBITDAR leverage",
+        "contents": "Macy's EBITDAR leverage to trend in the high-2x range",
+        "value": "high-2x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Fitch projects Macy's EBITDAR",
+        "evidence_offset": 108,
+        "evidence": "Fitch projects Macy's EBITDAR leverage to trend in the high-2x range while Nordstrom's EBITDAR leverage could trend near 3x. "
+      },
+      {
+        "name": "Nordstrom EBITDAR leverage",
+        "contents": "Nordstrom's EBITDAR leverage could trend near 3x",
+        "value": "3x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "while Nordstrom's EBITDAR leverage",
+        "evidence_offset": 70,
+        "evidence": "Fitch projects Macy's EBITDAR leverage to trend in the high-2x range while Nordstrom's EBITDAR leverage could trend near 3x. "
+      },
+      {
+        "name": "Kohl's EBITDAR leverage",
+        "contents": "Kohl's leverage to trend in the low-4x range assuming it can stabilize EBITDA around $800 million",
+        "value": "low-4x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Fitch expects Kohl's leverage",
+        "evidence_offset": 108,
+        "evidence": "Fitch expects Kohl's leverage to trend in the low-4x range assuming it can stabilize EBITDA around $800 million."
+      },
+      {
+        "name": "Kohl's EBITDA",
+        "contents": "stabilize EBITDA around $800 million",
+        "value": "$800 million",
+        "unit": "$",
+        "period": null,
+        "evidence_start": "Fitch expects Kohl's leverage",
+        "evidence_offset": 108,
+        "evidence": "Fitch expects Kohl's leverage to trend in the low-4x range assuming it can stabilize EBITDA around $800 million."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756789276756,
+    "report_id": 756994756789276753,
+    "company_name": "Macy’s",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Omnichannel investment",
+        "contents": "Invested in omnichannel models",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Portfolio reshaping",
+        "contents": "Reshaped portfolios to reduce exposure",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Merchandise and service enhancement",
+        "contents": "Enhanced merchandise and service levels",
+        "event_type": "Product/service",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Debt reduction",
+        "contents": "Reduced debt proactively",
+        "event_type": "Financing",
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 120,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Industry headwinds",
+        "contents": "Industry headwinds affecting department stores",
+        "period": null,
+        "evidence_start": "These retailers face industry headwinds",
+        "evidence_offset": 82,
+        "evidence": "These retailers face industry headwinds and are continuously refining strategies to defend market share. "
+      },
+      {
+        "name": "Omnichannel investment",
+        "contents": "Omnichannel investment as a strategic initiative",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Portfolio reshaping",
+        "contents": "Portfolio reshaping to reduce mall exposure",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Merchandise and service enhancement",
+        "contents": "Enhancing merchandise and service levels",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Execution challenges",
+        "contents": "Execution challenges limiting strategic benefits",
+        "period": null,
+        "evidence_start": "However, both have struggled to",
+        "evidence_offset": 144,
+        "evidence": "However, both have struggled to capitalize on these strengths, which Fitch expects is likely due to execution challenges.\n\nPre-pandemic, the three national players maintained EBITDAR leverages below 3."
+      },
+      {
+        "name": "Relative scale and cash flow",
+        "contents": "Greater scale and cash flow enable investment",
+        "period": null,
+        "evidence_start": "Structurally, Macy's, Kohl's and",
+        "evidence_offset": 202,
+        "evidence": "Structurally, Macy's, Kohl's and Nordstrom are well-positioned to accelerate investment and transformation efforts given greater relative scale and cash flow generation. Kohl's off-mall locations and Nordstrom's off-price segment and high-end merchandise positioning of its full price locations should be advantages. "
+      },
+      {
+        "name": "Off-mall and off-price advantages",
+        "contents": "Off-mall and off-price segments as advantages",
+        "period": null,
+        "evidence_start": "Kohl's off-mall locations and Nordstrom's",
+        "evidence_offset": 144,
+        "evidence": "Kohl's off-mall locations and Nordstrom's off-price segment and high-end merchandise positioning of its full price locations should be advantages. "
+      },
+      {
+        "name": "Debt reduction",
+        "contents": "Proactive debt reduction supports leverage",
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 120,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      }
+    ],
+    "variables": [
+      {
+        "name": "EBITDAR leverage",
+        "contents": "EBITDAR leverages below 3.5x",
+        "value": "below 3.5x",
+        "unit": "x",
+        "period": "Pre-pandemic",
+        "evidence_start": "Pre-pandemic, the three national",
+        "evidence_offset": 144,
+        "evidence": "Pre-pandemic, the three national players maintained EBITDAR leverages below 3.5x (closer to mid-2x for Kohl's) to support investment-grade ratings. "
+      },
+      {
+        "name": "EBITDAR leverage Kohl's",
+        "contents": "closer to mid-2x for Kohl's",
+        "value": "mid-2x",
+        "unit": "x",
+        "period": "Pre-pandemic",
+        "evidence_start": "Pre-pandemic, the three national",
+        "evidence_offset": 144,
+        "evidence": "Pre-pandemic, the three national players maintained EBITDAR leverages below 3.5x (closer to mid-2x for Kohl's) to support investment-grade ratings. "
+      },
+      {
+        "name": "EBITDA",
+        "contents": "EBITDA is below 2019",
+        "value": "below 2019",
+        "unit": null,
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 120,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      },
+      {
+        "name": "Leverage Macy's",
+        "contents": "Macy's leverage remains similar",
+        "value": "remains similar",
+        "unit": null,
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 120,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      },
+      {
+        "name": "Leverage Dillard's",
+        "contents": "Dillard's has lower leverage than peers",
+        "value": "lower than peers",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Dillard's has lower leverage than",
+        "evidence_offset": 62,
+        "evidence": "Dillard's has lower leverage than peers due to limited debt. EBITDAR leverage is expected to be around 3x and low-4x for Nordstrom and Kohl's, respectively."
+      },
+      {
+        "name": "Leverage Nordstrom",
+        "contents": "EBITDAR leverage is expected to be around 3x",
+        "value": "around 3x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "EBITDAR leverage is expected to",
+        "evidence_offset": 97,
+        "evidence": "EBITDAR leverage is expected to be around 3x and low-4x for Nordstrom and Kohl's, respectively."
+      },
+      {
+        "name": "Leverage Kohl's",
+        "contents": "low-4x for Nordstrom and Kohl's",
+        "value": "low-4x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "EBITDAR leverage is expected to",
+        "evidence_offset": 97,
+        "evidence": "EBITDAR leverage is expected to be around 3x and low-4x for Nordstrom and Kohl's, respectively."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756789276769,
+    "report_id": 756994756789276766,
+    "company_name": "Macy’s",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Omnichannel investment",
+        "contents": "Invested in omnichannel models",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Portfolio reshaping",
+        "contents": "Reshaped portfolios to reduce exposure",
+        "event_type": "Investment",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Merchandise and service enhancement",
+        "contents": "Enhanced merchandise and service levels",
+        "event_type": "Product/service",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Debt reduction",
+        "contents": "Reduced debt proactively",
+        "event_type": "Financing",
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 130,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Industry headwinds",
+        "contents": "Industry headwinds affecting department stores",
+        "period": null,
+        "evidence_start": "These retailers face industry headwinds",
+        "evidence_offset": 77,
+        "evidence": "These retailers face industry headwinds and are continuously refining strategies to defend market share. "
+      },
+      {
+        "name": "Omnichannel investment strategy",
+        "contents": "Omnichannel investment as a competitive strategy",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Portfolio reshaping strategy",
+        "contents": "Portfolio reshaping to reduce mall exposure",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Merchandise and service improvement",
+        "contents": "Enhancing merchandise and service levels",
+        "period": null,
+        "evidence_start": "Initiatives include investments in",
+        "evidence_offset": 181,
+        "evidence": "Initiatives include investments in omnichannel models, portfolio reshaping to reduce exposure to weaker indoor malls, and enhancing merchandise assortments and service levels.\n\nThese initiatives have seen mixed success. "
+      },
+      {
+        "name": "Execution challenges risk",
+        "contents": "Execution challenges limit capitalization on strengths",
+        "period": null,
+        "evidence_start": "However, both have struggled to",
+        "evidence_offset": 181,
+        "evidence": "However, both have struggled to capitalize on these strengths, which Fitch expects is likely due to execution challenges.\n\nPre-pandemic, the three national players maintained EBITDAR leverages below 3."
+      },
+      {
+        "name": "Relative scale and cash flow",
+        "contents": "Greater scale and cash flow enable investment",
+        "period": null,
+        "evidence_start": "Structurally, Macy's, Kohl's and",
+        "evidence_offset": 181,
+        "evidence": "Structurally, Macy's, Kohl's and Nordstrom are well-positioned to accelerate investment and transformation efforts given greater relative scale and cash flow generation. Kohl's off-mall locations and Nordstrom's off-price segment and high-end merchandise positioning of its full price locations should be advantages. "
+      },
+      {
+        "name": "Off-mall and off-price advantage",
+        "contents": "Off-mall and off-price segments as advantages",
+        "period": null,
+        "evidence_start": "Kohl's off-mall locations and Nordstrom's",
+        "evidence_offset": 181,
+        "evidence": "Kohl's off-mall locations and Nordstrom's off-price segment and high-end merchandise positioning of its full price locations should be advantages. However, both have struggled to capitalize on these strengths, which Fitch expects is likely due to execution challenges.\n\n"
+      },
+      {
+        "name": "Debt reduction supports leverage",
+        "contents": "Proactive debt reduction maintains leverage",
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 130,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      }
+    ],
+    "variables": [
+      {
+        "name": "EBITDAR leverage",
+        "contents": "EBITDAR leverages below 3.5x",
+        "value": "below 3.5x",
+        "unit": "x",
+        "period": "Pre-pandemic",
+        "evidence_start": "Pre-pandemic, the three national",
+        "evidence_offset": 153,
+        "evidence": "Pre-pandemic, the three national players maintained EBITDAR leverages below 3.5x (closer to mid-2x for Kohl's) to support investment-grade ratings. While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. "
+      },
+      {
+        "name": "Kohl's EBITDAR leverage",
+        "contents": "closer to mid-2x for Kohl's",
+        "value": "mid-2x",
+        "unit": "x",
+        "period": "Pre-pandemic",
+        "evidence_start": "Pre-pandemic, the three national",
+        "evidence_offset": 153,
+        "evidence": "Pre-pandemic, the three national players maintained EBITDAR leverages below 3.5x (closer to mid-2x for Kohl's) to support investment-grade ratings. While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. "
+      },
+      {
+        "name": "EBITDA",
+        "contents": "EBITDA is below 2019",
+        "value": "below 2019",
+        "unit": null,
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 130,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      },
+      {
+        "name": "Macy's leverage",
+        "contents": "Macy's leverage remains similar",
+        "value": "remains similar",
+        "unit": null,
+        "period": null,
+        "evidence_start": "While EBITDA is below 2019,",
+        "evidence_offset": 130,
+        "evidence": "While EBITDA is below 2019, Macy's leverage remains similar due to proactive debt reduction. Dillard's has lower leverage than peers due to limited debt. "
+      },
+      {
+        "name": "Dillard's leverage",
+        "contents": "Dillard's has lower leverage than peers",
+        "value": "lower than peers",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Dillard's has lower leverage than",
+        "evidence_offset": 65,
+        "evidence": "Dillard's has lower leverage than peers due to limited debt. EBITDAR leverage is expected to be around 3x and low-4x for Nordstrom and Kohl's, respectively."
+      },
+      {
+        "name": "EBITDAR leverage Nordstrom",
+        "contents": "EBITDAR leverage is expected to be around 3x",
+        "value": "around 3x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "EBITDAR leverage is expected to",
+        "evidence_offset": 92,
+        "evidence": "EBITDAR leverage is expected to be around 3x and low-4x for Nordstrom and Kohl's, respectively."
+      },
+      {
+        "name": "EBITDAR leverage Kohl's",
+        "contents": "low-4x for Nordstrom and Kohl's",
+        "value": "low-4x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "EBITDAR leverage is expected to",
+        "evidence_offset": 92,
+        "evidence": "EBITDAR leverage is expected to be around 3x and low-4x for Nordstrom and Kohl's, respectively."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756814442498,
+    "report_id": 756994756810248291,
+    "company_name": "Uber Technologies, Inc.",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Business model predictability",
+        "contents": "Evolving business models with less predictability",
+        "period": null,
+        "evidence_start": "Uber and Block operate in respective",
+        "evidence_offset": 110,
+        "evidence": "Uber and Block operate in respective evolving business models with less certain predictability.\n\nUber's revenue scale has exceeded PayPal Holdings, Inc.'"
+      },
+      {
+        "name": "Exposure to consumer market",
+        "contents": "Exposure to fragmented consumer market affected by macroeconomic cycles",
+        "period": null,
+        "evidence_start": "Both companies are exposed to",
+        "evidence_offset": 110,
+        "evidence": "Both companies are exposed to the fragmented consumer market that is more affected by macroeconomic cycles.\n\nFitch also compares Uber to direct competitors, Lyft, Inc. "
+      },
+      {
+        "name": "Customer diversification",
+        "contents": "Greater customer diversification through ownership of numerous software companies",
+        "period": null,
+        "evidence_start": "Constellation has greater customer diversification",
+        "evidence_offset": 97,
+        "evidence": "Constellation has greater customer diversification through its ownership of numerous software companies."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Revenue scale",
+        "contents": "Uber's revenue scale is nearly 2x that of Block, Inc.",
+        "value": "nearly 2x",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's revenue scale is",
+        "evidence_offset": 66,
+        "evidence": "Uber's revenue scale is nearly 2x that of Block, Inc. (Block; BBB-/Positive), both with similar EBITDA margins. "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "similar EBITDA margins",
+        "value": "similar",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's revenue scale is",
+        "evidence_offset": 66,
+        "evidence": "Uber's revenue scale is nearly 2x that of Block, Inc. (Block; BBB-/Positive), both with similar EBITDA margins. "
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Uber's EBITDA leverage is meaningfully lower than that of Block's.",
+        "value": "meaningfully lower",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's EBITDA leverage is",
+        "evidence_offset": 66,
+        "evidence": "Uber's EBITDA leverage is meaningfully lower than that of Block's. "
+      },
+      {
+        "name": "Revenue scale",
+        "contents": "Uber's revenue scale has exceeded PayPal Holdings, Inc.'s",
+        "value": "has exceeded",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's revenue scale has",
+        "evidence_offset": 66,
+        "evidence": "Uber's revenue scale has exceeded PayPal Holdings, Inc.'s (PayPal; A-/Stable). "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "PayPal's EBITDA and FCF margins are higher than Uber's",
+        "value": "higher than Uber's",
+        "unit": null,
+        "period": null,
+        "evidence_start": "PayPal's EBITDA and FCF",
+        "evidence_offset": 97,
+        "evidence": "PayPal's EBITDA and FCF margins are higher than Uber's and have been consistent for an extended period of time reflecting a more mature business model. "
+      },
+      {
+        "name": "FCF margin",
+        "contents": "PayPal's EBITDA and FCF margins are higher than Uber's",
+        "value": "higher than Uber's",
+        "unit": null,
+        "period": null,
+        "evidence_start": "PayPal's EBITDA and FCF",
+        "evidence_offset": 97,
+        "evidence": "PayPal's EBITDA and FCF margins are higher than Uber's and have been consistent for an extended period of time reflecting a more mature business model. "
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Uber's EBITDA leverage is the same level of PayPal's.",
+        "value": "the same level",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's EBITDA leverage is",
+        "evidence_offset": 61,
+        "evidence": "Uber's EBITDA leverage is meaningfully lower than that of Block's. "
+      },
+      {
+        "name": "Revenue scale",
+        "contents": "Uber's revenue scale is 7.6x and 4.1x those of Lyft's and DoorDash's (2024), respectively.",
+        "value": "7.6x and 4.1x",
+        "unit": "x",
+        "period": "2024",
+        "evidence_start": "Uber's revenue scale is",
+        "evidence_offset": 110,
+        "evidence": "Uber's revenue scale is nearly 2x that of Block, Inc. (Block; BBB-/Positive), both with similar EBITDA margins. "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%).",
+        "value": "14.7%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Uber's EBITDA margin (14.7%)",
+        "evidence_offset": 132,
+        "evidence": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%). Lyft has EBITDA leverage of 2."
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "Lyft's (6.6%)",
+        "value": "6.6%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Uber's EBITDA margin (14.7%)",
+        "evidence_offset": 132,
+        "evidence": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%). Lyft has EBITDA leverage of 2."
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "DoorDash's (17.7%)",
+        "value": "17.7%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Uber's EBITDA margin (14.7%)",
+        "evidence_offset": 132,
+        "evidence": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%). Lyft has EBITDA leverage of 2."
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Lyft has EBITDA leverage of 2.6x, above Uber's 1.5x.",
+        "value": "2.6x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Lyft has EBITDA leverage",
+        "evidence_offset": 61,
+        "evidence": "Lyft has EBITDA leverage of 2.6x, above Uber's 1.5x. DoorDash has no outstanding debt.\n\n"
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Uber's 1.5x",
+        "value": "1.5x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Lyft has EBITDA leverage",
+        "evidence_offset": 61,
+        "evidence": "Lyft has EBITDA leverage of 2.6x, above Uber's 1.5x. DoorDash has no outstanding debt.\n\n"
+      },
+      {
+        "name": "Outstanding debt",
+        "contents": "DoorDash has no outstanding debt.",
+        "value": "no outstanding debt",
+        "unit": null,
+        "period": null,
+        "evidence_start": "DoorDash has no outstanding",
+        "evidence_offset": 34,
+        "evidence": "DoorDash has no outstanding debt.\n\n"
+      },
+      {
+        "name": "Revenue scale",
+        "contents": "Uber's estimated revenue scale of $49.8 billion in 2025 is substantially larger than that of Constellation's",
+        "value": "$49.8 billion",
+        "unit": "$",
+        "period": "2025",
+        "evidence_start": "Uber's estimated revenue scale",
+        "evidence_offset": 120,
+        "evidence": "Uber's estimated revenue scale of $49.8 billion in 2025 is substantially larger than that of Constellation's with EBITDA margins of mid-20s, higher than Uber's. "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "EBITDA margins of mid-20s, higher than Uber's.",
+        "value": "mid-20s",
+        "unit": null,
+        "period": null,
+        "evidence_start": "EBITDA margins of mid-20s,",
+        "evidence_offset": 49,
+        "evidence": "8 billion in 2025 is substantially larger than that of Constellation's with EBITDA margins of mid-20s, higher than Uber's. "
+      }
+    ]
+  },
+  {
+    "section_id": 756994756814442510,
+    "report_id": 756994756814442507,
+    "company_name": "Uber Technologies, Inc.",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Business model predictability",
+        "contents": "Evolving business models with less predictability",
+        "period": null,
+        "evidence_start": "Uber and Block operate in respective",
+        "evidence_offset": 120,
+        "evidence": "Uber and Block operate in respective evolving business models with less certain predictability.\n\nUber's revenue scale has exceeded that of PayPal Holdings, Inc.'"
+      },
+      {
+        "name": "Exposure to consumer market",
+        "contents": "Exposure to fragmented consumer market affected by macroeconomic cycles",
+        "period": null,
+        "evidence_start": "Both companies are exposed to",
+        "evidence_offset": 120,
+        "evidence": "Both companies are exposed to the fragmented consumer market that is more affected by macroeconomic cycles.\n\nFitch also compares Uber to direct competitors, Lyft, Inc. "
+      },
+      {
+        "name": "Customer diversification",
+        "contents": "Greater customer diversification through software company ownership",
+        "period": null,
+        "evidence_start": "Constellation has greater customer diversification",
+        "evidence_offset": 97,
+        "evidence": "Constellation has greater customer diversification through its ownership of numerous software companies."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Revenue scale",
+        "contents": "Uber's revenue scale is nearly 2x that of Block, Inc. (BBB-/Positive)",
+        "value": "nearly 2x that of Block, Inc.",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's revenue scale is",
+        "evidence_offset": 99,
+        "evidence": "Uber's revenue scale is nearly 2x that of Block, Inc. (BBB-/Positive), both with similar EBITDA margins. "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "similar EBITDA margins",
+        "value": "similar",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's revenue scale is",
+        "evidence_offset": 99,
+        "evidence": "Uber's revenue scale is nearly 2x that of Block, Inc. (BBB-/Positive), both with similar EBITDA margins. "
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Uber's EBITDA leverage is meaningfully lower than that of Block's.",
+        "value": "meaningfully lower than that of Block's",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's EBITDA leverage is",
+        "evidence_offset": 74,
+        "evidence": "Uber's EBITDA leverage is meaningfully lower than that of Block's. Uber and Block operate in respective evolving business models with less certain predictability.\n\n"
+      },
+      {
+        "name": "Revenue scale",
+        "contents": "Uber's revenue scale has exceeded that of PayPal Holdings, Inc.'s (A-/Stable).",
+        "value": "exceeded that of PayPal Holdings, Inc.'s",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's revenue scale has",
+        "evidence_offset": 91,
+        "evidence": "Uber's revenue scale has exceeded that of PayPal Holdings, Inc.'s (A-/Stable). PayPal's EBITDA and FCF margins are higher than that of Uber's and have been consistent for an extended period of time reflective of a more mature business model. "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "PayPal's EBITDA and FCF margins are higher than that of Uber's",
+        "value": "higher than that of Uber's",
+        "unit": null,
+        "period": null,
+        "evidence_start": "PayPal's EBITDA and FCF",
+        "evidence_offset": 108,
+        "evidence": "PayPal's EBITDA and FCF margins are higher than that of Uber's and have been consistent for an extended period of time reflective of a more mature business model. "
+      },
+      {
+        "name": "FCF margin",
+        "contents": "PayPal's EBITDA and FCF margins are higher than that of Uber's",
+        "value": "higher than that of Uber's",
+        "unit": null,
+        "period": null,
+        "evidence_start": "PayPal's EBITDA and FCF",
+        "evidence_offset": 108,
+        "evidence": "PayPal's EBITDA and FCF margins are higher than that of Uber's and have been consistent for an extended period of time reflective of a more mature business model. "
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Uber's EBITDA leverage is the same level of PayPal's.",
+        "value": "the same level of PayPal's",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's EBITDA leverage is",
+        "evidence_offset": 61,
+        "evidence": "Uber's EBITDA leverage is meaningfully lower than that of Block's. "
+      },
+      {
+        "name": "Revenue scale",
+        "contents": "Uber's revenue scale is 7.6x and 4.1x those of Lyft's and DoorDash's (2024), respectively.",
+        "value": "7.6x and 4.1x those of Lyft's and DoorDash's",
+        "unit": "x",
+        "period": "2024",
+        "evidence_start": "Uber's revenue scale is",
+        "evidence_offset": 110,
+        "evidence": "Uber's revenue scale is nearly 2x that of Block, Inc. (BBB-/Positive), both with similar EBITDA margins. Uber's EBITDA leverage is meaningfully lower than that of Block's. "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%).",
+        "value": "14.7%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Uber's EBITDA margin (14.7%)",
+        "evidence_offset": 128,
+        "evidence": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%). Lyft has EBITDA leverage of 2."
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "Lyft's (6.6%)",
+        "value": "6.6%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Uber's EBITDA margin (14.7%)",
+        "evidence_offset": 128,
+        "evidence": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%). Lyft has EBITDA leverage of 2."
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "DoorDash's (17.7%)",
+        "value": "17.7%",
+        "unit": "%",
+        "period": null,
+        "evidence_start": "Uber's EBITDA margin (14.7%)",
+        "evidence_offset": 128,
+        "evidence": "Uber's EBITDA margin (14.7%) is more than 2x Lyft's (6.6%) and modestly smaller than DoorDash's (17.7%). Lyft has EBITDA leverage of 2."
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Lyft has EBITDA leverage of 2.6x, above Uber's 1.5x.",
+        "value": "2.6x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Lyft has EBITDA leverage",
+        "evidence_offset": 56,
+        "evidence": "Lyft has EBITDA leverage of 2.6x, above Uber's 1.5x. DoorDash has no outstanding debt.\n\n"
+      },
+      {
+        "name": "EBITDA leverage",
+        "contents": "Uber's 1.5x",
+        "value": "1.5x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "Lyft has EBITDA leverage",
+        "evidence_offset": 56,
+        "evidence": "Lyft has EBITDA leverage of 2.6x, above Uber's 1.5x. DoorDash has no outstanding debt.\n\n"
+      },
+      {
+        "name": "Outstanding debt",
+        "contents": "DoorDash has no outstanding debt.",
+        "value": "no outstanding debt",
+        "unit": null,
+        "period": null,
+        "evidence_start": "DoorDash has no outstanding",
+        "evidence_offset": 34,
+        "evidence": "DoorDash has no outstanding debt.\n\n"
+      },
+      {
+        "name": "Estimated revenue scale",
+        "contents": "Uber's estimated revenue scale of $49.8 billion in 2025 is substantially larger than that of Constellation's",
+        "value": "$49.8 billion",
+        "unit": "$",
+        "period": "2025",
+        "evidence_start": "Uber's estimated revenue scale",
+        "evidence_offset": 120,
+        "evidence": "Uber's estimated revenue scale of $49.8 billion in 2025 is substantially larger than that of Constellation's with EBITDA margins of mid-20s, higher than Uber's. "
+      },
+      {
+        "name": "EBITDA margin",
+        "contents": "Constellation's with EBITDA margins of mid-20s, higher than Uber's.",
+        "value": "mid-20s",
+        "unit": null,
+        "period": null,
+        "evidence_start": "Uber's estimated revenue scale",
+        "evidence_offset": 120,
+        "evidence": "Uber's estimated revenue scale of $49.8 billion in 2025 is substantially larger than that of Constellation's with EBITDA margins of mid-20s, higher than Uber's. "
+      }
+    ]
+  },
+  {
+    "section_id": 756994756814442549,
+    "report_id": 756994756814442546,
+    "company_name": "United Airlines",
+    "section_name": "Peer Analysis",
+    "events": [],
+    "factors": [
+      {
+        "name": "Lower total debt burden",
+        "contents": "Lower total debt burden compared to American Airlines",
+        "period": null,
+        "evidence_start": "The rating differential is partially",
+        "evidence_offset": 222,
+        "evidence": "The rating differential is partially driven by United's total debt burden, which remains lower than American's, along with a higher liquidity balance. However, Fitch believes United has lower de-leveraging capacity and greater execution risk relative to American, due to the company's capital spending and fleet renewal program.\n\n"
+      },
+      {
+        "name": "Higher liquidity balance",
+        "contents": "Higher liquidity balance compared to American Airlines",
+        "period": null,
+        "evidence_start": "The rating differential is partially",
+        "evidence_offset": 222,
+        "evidence": "The rating differential is partially driven by United's total debt burden, which remains lower than American's, along with a higher liquidity balance. However, Fitch believes United has lower de-leveraging capacity and greater execution risk relative to American, due to the company's capital spending and fleet renewal program.\n\n"
+      },
+      {
+        "name": "Lower de-leveraging capacity",
+        "contents": "Lower de-leveraging capacity due to capital spending and fleet renewal",
+        "period": null,
+        "evidence_start": "However, Fitch believes United has",
+        "evidence_offset": 206,
+        "evidence": "However, Fitch believes United has lower de-leveraging capacity and greater execution risk relative to American, due to the company's capital spending and fleet renewal program.\n\nUnited is two notches below Delta Air Lines (BBB-/Stable), with the difference driven by United's higher gross leverage. "
+      },
+      {
+        "name": "Greater execution risk",
+        "contents": "Greater execution risk due to capital spending and fleet renewal",
+        "period": null,
+        "evidence_start": "However, Fitch believes United has",
+        "evidence_offset": 206,
+        "evidence": "However, Fitch believes United has lower de-leveraging capacity and greater execution risk relative to American, due to the company's capital spending and fleet renewal program.\n\nUnited is two notches below Delta Air Lines (BBB-/Stable), with the difference driven by United's higher gross leverage. "
+      },
+      {
+        "name": "Higher gross leverage",
+        "contents": "Higher gross leverage compared to Delta Air Lines",
+        "period": null,
+        "evidence_start": "United is two notches below",
+        "evidence_offset": 181,
+        "evidence": "United is two notches below Delta Air Lines (BBB-/Stable), with the difference driven by United's higher gross leverage. Delta also benefits from higher operating margins and pre-pandemic track record of FCF generation.\n\n"
+      },
+      {
+        "name": "Higher operating margins",
+        "contents": "Delta benefits from higher operating margins",
+        "period": null,
+        "evidence_start": "Delta also benefits from higher",
+        "evidence_offset": 97,
+        "evidence": "Delta also benefits from higher operating margins and pre-pandemic track record of FCF generation.\n\n"
+      },
+      {
+        "name": "Pre-pandemic FCF generation track record",
+        "contents": "Delta benefits from pre-pandemic FCF generation track record",
+        "period": null,
+        "evidence_start": "Delta also benefits from higher",
+        "evidence_offset": 97,
+        "evidence": "Delta also benefits from higher operating margins and pre-pandemic track record of FCF generation.\n\n"
+      },
+      {
+        "name": "Low stress scenario LTVs",
+        "contents": "Low stress scenario LTVs support 'A+' rating",
+        "period": null,
+        "evidence_start": "Stress scenario LTVs for the",
+        "evidence_offset": 181,
+        "evidence": "Stress scenario LTVs for the 2019-2, 2019-1 and 2018-1 transactions remain low and continue to support the 'A+' rating. Class A certificates that are rated 'A' compare well with issuances from American and Air Canada that are also rated 'A'. "
+      },
+      {
+        "name": "Similar overcollateralization levels",
+        "contents": "Similar overcollateralization levels drive rating similarities",
+        "period": null,
+        "evidence_start": "Rating similarities are driven by",
+        "evidence_offset": 120,
+        "evidence": "Rating similarities are driven by similar levels of overcollateralization and high-quality pools of collateral.\n\nCertificates rated at 'BBB+', 'BBB' or 'BBB-' are notched up from United's IDR through Fitch's bottom-up approach. "
+      },
+      {
+        "name": "High-quality collateral pools",
+        "contents": "High-quality pools of collateral drive rating similarities",
+        "period": null,
+        "evidence_start": "Rating similarities are driven by",
+        "evidence_offset": 120,
+        "evidence": "Rating similarities are driven by similar levels of overcollateralization and high-quality pools of collateral.\n\nCertificates rated at 'BBB+', 'BBB' or 'BBB-' are notched up from United's IDR through Fitch's bottom-up approach. "
+      },
+      {
+        "name": "Weaker recovery prospects",
+        "contents": "Weaker recovery prospects reduce uplift for some certificates",
+        "period": null,
+        "evidence_start": "Certificates rated 'BBB' or 'BBB-'",
+        "evidence_offset": 163,
+        "evidence": "Certificates rated 'BBB' or 'BBB-' receive less uplift compared to similar transactions from other issuers due to weaker recovery prospects."
+      }
+    ],
+    "variables": []
+  },
+  {
+    "section_id": 756994756822831188,
+    "report_id": 756994756822831185,
+    "company_name": "Walmart Inc.",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Target market share gains",
+        "contents": "Target gained market share",
+        "event_type": "SalesVolume",
+        "period": "during the pandemic",
+        "evidence_start": "Its market share gains during",
+        "evidence_offset": 277,
+        "evidence": "Its market share gains during the pandemic followed successful implementation of omnichannel initiatives, and it benefits from efficient supply chain operations and differentiated customer proposition. Target's ratings reflect its higher exposure to discretionary categories such as apparel and home, which create greater levels of operating volatility through economic cycles. "
+      }
+    ],
+    "factors": [
+      {
+        "name": "Amazon regulatory uncertainty",
+        "contents": "Regulatory activity creates uncertainty for Amazon",
+        "period": null,
+        "evidence_start": "Amazon's credit profile incorporates",
+        "evidence_offset": 312,
+        "evidence": "Amazon's credit profile incorporates somewhat higher uncertainty around its long-term operating path and ongoing regulatory activity surrounding the company's market share and business practices.\n\nTarget has higher margins than Walmart, a similar leverage profile, and a smaller scale. Its market share gains during the pandemic followed successful implementation of omnichannel initiatives, and it benefits from efficient supply chain operations and differentiated customer proposition. "
+      },
+      {
+        "name": "Target discretionary exposure",
+        "contents": "Target exposed to discretionary categories volatility",
+        "period": null,
+        "evidence_start": "Target's ratings reflect its higher",
+        "evidence_offset": 282,
+        "evidence": "Target's ratings reflect its higher exposure to discretionary categories such as apparel and home, which create greater levels of operating volatility through economic cycles. The Negative Outlook reflects Target's recent execution missteps, exacerbated by a volatile retail industry, which have pressured market share and profitability.\n\n"
+      },
+      {
+        "name": "Target execution missteps",
+        "contents": "Target's execution missteps pressured performance",
+        "period": null,
+        "evidence_start": "The Negative Outlook reflects Target's",
+        "evidence_offset": 246,
+        "evidence": "The Negative Outlook reflects Target's recent execution missteps, exacerbated by a volatile retail industry, which have pressured market share and profitability.\n\nHome Depot's 'A'/Stable IDR reflects its scale and cash flow generation, coupled with a solid track record of comps growth and margin expansion. "
+      },
+      {
+        "name": "Home Depot housing cycle volatility",
+        "contents": "Home improvement category shows operating volatility",
+        "period": null,
+        "evidence_start": "Home Depot competes in the home",
+        "evidence_offset": 246,
+        "evidence": "Home Depot competes in the home improvement category, which has demonstrated historical operating volatility around housing and economic cycles. The ratings also reflect management's publicly stated long-term leverage target of 2.0x on an EBITDAR leverage basis."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Amazon EBITDA",
+        "contents": "about $140 billion in 2024 EBITDA",
+        "value": "$140 billion",
+        "unit": "$",
+        "period": "2024",
+        "evidence_start": "significant scale (with about $140",
+        "evidence_offset": 312,
+        "evidence": "Amazon's rating is one notch lower than Walmart's despite its similar leverage, leading positions in e-commerce and cloud computing services, close customer connections, significant scale (with about $140 billion in 2024 EBITDA), good FCF generation and reasonable projected EBITDAR leverage of about 2.0x. Amazon's credit profile incorporates somewhat higher uncertainty around its long-term operating path and ongoing regulatory activity surrounding the company's market share and business practices.\n\n"
+      },
+      {
+        "name": "Amazon projected EBITDAR leverage",
+        "contents": "reasonable projected EBITDAR leverage of about 2.0x",
+        "value": "2.0x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "good FCF generation and reasonable",
+        "evidence_offset": 312,
+        "evidence": "Amazon's rating is one notch lower than Walmart's despite its similar leverage, leading positions in e-commerce and cloud computing services, close customer connections, significant scale (with about $140 billion in 2024 EBITDA), good FCF generation and reasonable projected EBITDAR leverage of about 2.0x. Amazon's credit profile incorporates somewhat higher uncertainty around its long-term operating path and ongoing regulatory activity surrounding the company's market share and business practices.\n\n"
+      },
+      {
+        "name": "Home Depot long-term leverage target",
+        "contents": "publicly stated long-term leverage target of 2.0x on an EBITDAR leverage basis",
+        "value": "2.0x",
+        "unit": "x",
+        "period": "long-term",
+        "evidence_start": "The ratings also reflect management's",
+        "evidence_offset": 246,
+        "evidence": "The ratings also reflect management's publicly stated long-term leverage target of 2.0x on an EBITDAR leverage basis."
+      }
+    ]
+  },
+  {
+    "section_id": 756994756822831201,
+    "report_id": 756994756822831198,
+    "company_name": "Walmart Inc.",
+    "section_name": "Peer Analysis",
+    "events": [
+      {
+        "name": "Target market share gains",
+        "contents": "Target gained market share",
+        "event_type": "SalesVolume",
+        "period": "beginning 2020",
+        "evidence_start": "Its market share gains beginning",
+        "evidence_offset": 246,
+        "evidence": "Its market share gains beginning 2020 followed successful implementation of omnichannel initiatives, and it benefits from efficient supply chain operations and differentiated customer proposition. Target's ratings reflect its higher exposure to discretionary categories such as apparel and home, which create greater levels of operating volatility through economic cycles.\n\n"
+      }
+    ],
+    "factors": [
+      {
+        "name": "Amazon regulatory uncertainty",
+        "contents": "Higher uncertainty from regulatory activity",
+        "period": null,
+        "evidence_start": "Amazon's credit profile incorporates",
+        "evidence_offset": 246,
+        "evidence": "Amazon's credit profile incorporates somewhat higher uncertainty around its long-term operating path and ongoing regulatory activity surrounding the company's market share and business practices.\n\nTarget has higher margins than Walmart, a similar leverage profile, and a smaller scale. "
+      },
+      {
+        "name": "Target discretionary exposure",
+        "contents": "Higher exposure to discretionary categories",
+        "period": null,
+        "evidence_start": "Target's ratings reflect its higher",
+        "evidence_offset": 246,
+        "evidence": "Target's ratings reflect its higher exposure to discretionary categories such as apparel and home, which create greater levels of operating volatility through economic cycles.\n\nHome Depot's 'A'/Stable IDR reflects its scale and cash flow generation, coupled with a solid track record of comps growth and margin expansion. "
+      },
+      {
+        "name": "Home Depot leverage target",
+        "contents": "Long-term leverage target of 2.0x",
+        "period": null,
+        "evidence_start": "The ratings also reflect management's",
+        "evidence_offset": 202,
+        "evidence": "The ratings also reflect management's publicly stated long-term leverage target of 2.0x on an EBITDAR leverage basis."
+      }
+    ],
+    "variables": [
+      {
+        "name": "Amazon EBITDA",
+        "contents": "about $140 billion in 2024 EBITDA",
+        "value": "$140 billion",
+        "unit": "$",
+        "period": "2024",
+        "evidence_start": "significant scale (with about $140",
+        "evidence_offset": 246,
+        "evidence": "Amazon's rating is one notch lower than Walmart's despite its similar leverage, leading positions in e-commerce and cloud computing services, close customer connections, significant scale (with about $140 billion in 2024 EBITDA), good FCF generation and reasonable projected EBITDAR leverage of about 2."
+      },
+      {
+        "name": "Amazon projected EBITDAR leverage",
+        "contents": "reasonable projected EBITDAR leverage of about 2.0x",
+        "value": "2.0x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "significant scale (with about $140",
+        "evidence_offset": 246,
+        "evidence": "Amazon's rating is one notch lower than Walmart's despite its similar leverage, leading positions in e-commerce and cloud computing services, close customer connections, significant scale (with about $140 billion in 2024 EBITDA), good FCF generation and reasonable projected EBITDAR leverage of about 2."
+      },
+      {
+        "name": "Home Depot leverage target",
+        "contents": "long-term leverage target of 2.0x on an EBITDAR leverage basis",
+        "value": "2.0x",
+        "unit": "x",
+        "period": null,
+        "evidence_start": "The ratings also reflect management's",
+        "evidence_offset": 202,
+        "evidence": "The ratings also reflect management's publicly stated long-term leverage target of 2.0x on an EBITDAR leverage basis."
+      }
+    ]
+  }
+]

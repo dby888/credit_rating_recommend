@@ -1,5 +1,6 @@
 # get data from html to database
 import json
+import os.path
 from pathlib import Path
 import re
 
@@ -86,27 +87,28 @@ def extract_event(section_names=None):
             continue
         row_list_need.append(row)
 
-
     batch_rows = extractor.extract_batch_rows(row_list_need)
     print("\n=== BATCH (ROWS WITH METADATA) RESULT ===")
-    out_path = f"efv_batch_rows{section_name}.json"
-    with open(out_path, "w", encoding="utf-8") as f:
-        json.dump(batch_rows, f, ensure_ascii=False, indent=2)
 
-    print("Saved to:", out_path)
-    try:
-        with open(f"efv_batch_rows{section_name}.json", "r", encoding="utf-8") as f:
-            batch_rows = json.load(f)
-    except:
-        return
     data_utils.delete_efv_by_section_names(section_names)
     stats = data_utils.insert_efv_rows(batch_rows)
     print(stats)
+
+    try:
+        out_path = os.path.join(settings.data_file_path, f"efv_batch_rows{section_name}.json")
+        with open(out_path, "w", encoding="utf-8") as f:
+            json.dump(batch_rows, f, ensure_ascii=False, indent=2)
+        print("Saved to:", out_path)
+        # with open(f"efv_batch_rows{section_name}.json", "r", encoding="utf-8") as f:
+        #     batch_rows = json.load(f)
+    except:
+        return
+
     return events
 
 
 if __name__ == '__main__':
     # get_html_data
     # process_raw_data(settings.Fitch_report_file_path, "Fitch")
-    extract_event(["liquidity and debt structure"])
-    # extract_event(["Issuer Profile"])
+    # extract_event(["liquidity and debt structure","key rating drivers"])
+    extract_event(['Peer Analysis'])

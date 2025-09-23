@@ -1,0 +1,6 @@
+{
+  "use_global": true,
+  "k_var": 20,
+  "k_factor": 10,
+  "k_event": 8
+}
